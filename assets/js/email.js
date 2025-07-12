@@ -1,27 +1,34 @@
-(function(){
-    emailjs.init('JhxYdHXztTgi-xOLt');
-  })();
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
 
-  const form = document.getElementById('contact-form');
-  const loading = form.querySelector('.loading');
-  const errorMessage = form.querySelector('.error-message');
-  const sentMessage = form.querySelector('.sent-message');
+  const loading = document.querySelector('.loading');
+  const errorMsg = document.querySelector('.error-message');
+  const successMsg = document.querySelector('.sent-message');
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
+  loading.style.display = 'block';
+  errorMsg.style.display = 'none';
+  successMsg.style.display = 'none';
 
-    loading.style.display = 'block';
-    errorMessage.textContent = '';
-    sentMessage.style.display = 'none';
+  const formData = new FormData(this);
 
-    emailjs.sendForm('service_f8vsaam', 'template_5v8y4yp', this)
-      .then(() => {
-        loading.style.display = 'none';
-        sentMessage.style.display = 'block';
-        form.reset();
-      }, (err) => {
-        loading.style.display = 'none';
-        errorMessage.textContent = 'Oops! Something went wrong. Please try again.';
-        console.error('EmailJS error:', err);
-      });
+  fetch('send_email.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(text => {
+    loading.style.display = 'none';
+    if (text === 'success') {
+      successMsg.style.display = 'block';
+      this.reset();
+    } else {
+      errorMsg.textContent = text;
+      errorMsg.style.display = 'block';
+    }
+  })
+  .catch(err => {
+    loading.style.display = 'none';
+    errorMsg.textContent = 'An error occurred. Please try again.';
+    errorMsg.style.display = 'block';
   });
+});

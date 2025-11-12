@@ -4,201 +4,209 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Xenotrix Technologies</title>
-  <meta name="description" content="Xenotune - AI-generated infinite ambient music using FastAPI and Flutter">
-  <meta name="keywords" content="Xenotune, AI Music, FastAPI, Flutter, LSTM, Xenotrix Technologies, Xenotrix, Xenotrixtech, Xenotech">
-  <meta name="robots" content="index, follow">
+  <title>Xenotune - Project Details</title>
+  <meta name="description" content="Xenotune is an AI-powered music generation system built by Xenotrix Technologies using FastAPI and Flutter.">
+  <meta name="keywords" content="Xenotune, AI Music Generator, FastAPI, Flutter, Xenotrix Technologies">
 
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Xenotrix</h1><span>.</span></a>
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Xenotrix</h1><span>.</span>
+      </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://xenotrix-technologies.github.io/Xenotune/">Xenotune</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted" href="#portfolio-details">Get Started</a>
+      <div class="social-links d-flex">
+        <a href="https://github.com/Xenotrix-Technologies" target="_blank" class="github"><i class="bi bi-github"></i></a>&nbsp;
+        <a href="https://www.linkedin.com/company/xenotrix-technologies" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp;
+        <a href="https://www.instagram.com/xenotrix_" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
     </div>
   </header>
 
   <main class="main">
-    <div class="page-title">
-      <div class="heading">
-        <div class="container text-center">
-          <h1 class="heading-title">Portfolio Details</h1>
-          <p class="mb-0">Explore how Xenotrix Technologies fused AI and music to create a seamless ambient experience through our flagship app Xenotune.</p>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Xenotune</h1>
+        <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current">Project Details</li>
           </ol>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
+    <!-- End Page Title -->
 
+    <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
+
       <div class="container" data-aos="fade-up">
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">{"loop":true,"speed":600,"autoplay":{"delay":5000},"slidesPerView":"auto","navigation":{"nextEl":".swiper-button-next","prevEl":".swiper-button-prev"},"pagination":{"el":".swiper-pagination","type":"bullets","clickable":true}}</script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/portfolio/xenotune-1.webp" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/portfolio/xenotune-2.webp" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/portfolio/xenotune-3.webp" alt=""></div>
+        <div class="row gy-4 g-lg-5">
+          <div class="col-lg-6">
+            <img src="assets/img/portfolio/xenotune.png" class="img-fluid mb-4" alt="Xenotune Interface">
+            <img src="assets/img/portfolio/fg.jpg" class="img-fluid mb-4" alt="AI Music Generator">
+            <img src="assets/img/portfolio/Long ss.jpg" class="img-fluid mb-4" alt="Relax Mode Interface">
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="portfolio-description">
-              <h2>Xenotune – AI-Powered Music Generator</h2>
-              <p>Xenotune is an intelligent platform that generates infinite ambient music in modes like Focus, Relax, and Sleep. Powered by FastAPI and Flutter, it combines deep learning, MIDI-to-MP3 conversion, and seamless loop integration for real-time generation.</p>
-              <p>The system uses LSTM models to compose melodies and harmonizes them with layered instrumentation, configurable via JSON. Real-time MIDI conversion with audio blending allows uninterrupted, immersive experiences for users.</p>
-              <div class="testimonial-item">
-                <p><i class="bi bi-quote quote-icon-left"></i><span>Xenotune brings code and creativity together. It’s not just music generation, it’s adaptive audio evolution.</span><i class="bi bi-quote quote-icon-right"></i></p>
-                <div>
-                  <!--<img src="assets/img/person/person-m-5.webp" class="testimonial-img" alt="">-->
-                  <h3>Backend Developer</h3>
-                  <h4>CTO & Co-Founder</h4>
+          <div class="col-lg-6">
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+                <h2>Xenotune — AI Music Generation Platform</h2>
+                <p>
+                  <strong>Xenotune</strong> is an AI-powered music generation system developed by <strong>Xenotrix Technologies</strong>. It creates infinite, mood-based soundscapes using deep learning and music theory. The platform is designed for focus, relaxation, and sleep, generating unique melodies every time.
+                </p>
+                <p>
+                  Built with <strong>FastAPI</strong> as the backend and <strong>Flutter</strong> as the frontend, Xenotune blends advanced AI models with real-time audio synthesis. It uses <strong>music21</strong> for composition, <strong>FluidSynth</strong> for MIDI rendering, and <strong>FFmpeg</strong> for smooth MP3 conversion.
+                </p>
+
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>“Xenotune redefines how AI interacts with music — generating emotion-driven, endless compositions that evolve as you listen.”</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <div>
+                    <img src="assets/img/person/sanjay.webp" class="testimonial-img" alt="">
+                    <h3></h3>
+                    <h4>Backend & AI Integration</h4>
+                  </div>
                 </div>
+
+                <p>
+                  The app seamlessly integrates AI melody generation with real-time sound control through Flutter. It supports full playback control — play, pause, resume, and stop — along with smooth fade-in/out transitions and background blending.
+                </p>
+
+                <p>
+                  Xenotune also connects with <strong>Firebase</strong> for secure file storage and metadata management, maintaining mood-specific data like tempo, instruments, and emotion mapping for each generated piece.
+                </p>
               </div>
-              <p>Built for productivity and mental wellness, Xenotune is ideal for individuals, creators, and enterprises seeking ambient soundscapes on demand. Future updates include wearable sync and real-time mood tracking.</p>
+
+              <div class="portfolio-info mt-5">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Category:</strong> AI Music Generation</li>
+                  <li><strong>Client:</strong>own product</li>
+                  <li><strong>Project Date:</strong> July 2025</li>
+                  <li><strong>Tech Stack:</strong> FastAPI, Flutter, Python, music21, FFmpeg, Firebase</li>
+                  <li><strong>Project URL:</strong>www.xenotrix.in/xenotune</li>
+                  <li><a href="https://www.xenotrix.in/xenotune" class="btn-visit align-self-start">Visit Website</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: AI, Music, Mobile App</li>
-                <li><strong>Client</strong>: Internal Product – Xenotrix Technologies</li>
-                <li><strong>Project date</strong>: July 2, 2025</li>
-                <li><strong>Project URL</strong><a href="https://xenotrix-technologies.github.io/Xenotune/">xenotune</a></li>
-                <li><a href="https://xenotrix-technologies.github.io/Xenotune/" class="btn-visit align-self-start">Visit Website</a></li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
+
     </section>
+    <!-- /Portfolio Details Section -->
+
   </main>
 
   <footer id="footer" class="footer light-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Xenotrix.</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p><strong>Email:</strong> <span>xenotrixtech@gmail.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <!--<a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>-->
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+  <div class="container">
+    <div class="row gy-3">
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div class="address">
+          <h4>Our Location</h4>
+          <p>Thrissur,Kerala</p>
+          <p>India - 680594</p>
         </div>
+      </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="service.html#tab-web">Website Development</a></li>
-            <li><a href="service.html#tab-app">App Development</a></li>
-            <li><a href="service.html#tab-ai">AI Integration</a></li>
-            <li><a href="service.html#tab-uiux">UI/UX Design</a></li>
-            <li><a href="service.html#tab-data">Data Analysis</a></li>
-          </ul>
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Phone:</strong> <span>+91 98765 43210</span><br>
+            <strong>Phone:</strong> <span>+91 7736736495</span><br>
+            <strong>Phone:</strong> <span>--------------</span><br>
+            <strong>Email:</strong> <span>xenotrixtech@gmail.com</span><br>
+          </p>
         </div>
+      </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Solutions</h4>
-          <ul>
-            <li><a href="services.html#tab-marketing">Digital Marketing</a></li>
-            <li><a href="projects.html">Student Projects</a></li>
-            <li><a href="solutions.html">Automation Tools</a></li>
-            <li><a href="case-studies.html">Case Studies</a></li>
-            <li><a href="faq.html">FAQs</a></li>
-          </ul>
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-clock icon"></i>
+        <div>
+          <h4>Working Hours</h4>
+          <p>
+            <strong>Mon - Sat:</strong> <span>10AM - 8PM</span><br>
+            <strong>Sunday:</strong> <span>Closed</span>
+          </p>
         </div>
+      </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Technologies</h4>
-          <ul>
-            <li><a href="#">Python & FastAPI</a></li>
-            <li><a href="#">Flutter & Dart</a></li>
-            <li><a href="#">Firebase</a></li>
-            <li><a href="#">SQL & NoSQL</a></li>
-            <li><a href="#">Figma & UI Kits</a></li>
-          </ul>
+      <div class="col-lg-3 col-md-6">
+        <h4>Follow Us</h4>
+        <div class="social-links d-flex">
+          <a href="https://github.com/Xenotrix-Technologies" target="_blank" class="github"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/company/xenotrix-technologies" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/xenotrix_" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div>
+          <a href="policyprivacy.html" class="text-decoration-none" style="color: var(--default-color);">Privacy Policy</a>
         </div>
       </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
+  </div>
+  <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Xenotrix Technologies</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a href="https://github.com/sk-sanju/Sanjay">Sanjay@xenotrix</a>
+        Designed by <a href="https://www.xenotrix.in">Xenotrix Team</a>
       </div>
-    </div>
-
+  </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

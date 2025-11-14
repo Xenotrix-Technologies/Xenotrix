@@ -2302,6 +2302,18 @@ section,
   max-width: 1280px;
 }
 
+.contact-image {
+  width: 400px;         /* adjust size */
+  height: auto;        /* keeps correct ratio */
+  cursor: pointer;   /* show clickable pointer */
+  border-radius: 12px;
+  transform: translateY(0); /* smooth hover effect */
+}
+
+.contact-image:hover {
+  transform: translateY(-5px);   /* zoom effect on hover */
+}
+
 .contact .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr;

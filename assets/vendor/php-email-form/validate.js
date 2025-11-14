@@ -1,47 +1,27 @@
-(function () {
-  "use strict";
+$("#contact-form").on("submit", function (e) {
+  e.preventDefault();
 
-  const form = document.getElementById("contact-form");
-  if (!form) return;
+  $(".loading").show();
+  $(".sent-message").hide();
+  $(".error-message").hide();
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
+  $.ajax({
+    url: "forms/contact.php",
+    type: "POST",
+    data: $(this).serialize(),
+    success: function (response) {
+      $(".loading").hide();
 
-    const loadingEl = form.querySelector(".loading");
-    const errorEl = form.querySelector(".error-message");
-    const successEl = form.querySelector(".sent-message");
-
-    // Reset UI
-    loadingEl.style.display = "block";
-    errorEl.style.display = "none";
-    successEl.style.display = "none";
-
-    const formData = new FormData(form);
-
-    fetch(form.getAttribute("action"), {
-      method: "POST",
-      body: formData
-    })
-      .then(response => response.text())
-      .then(result => {
-        console.log("Server Response:", result);
-
-        loadingEl.style.display = "none";
-
-        if (result.startsWith("SUCCESS:")) {
-          successEl.textContent = result.replace("SUCCESS:", "").trim();
-          successEl.style.display = "block";
-          form.reset();
-        } else {
-          errorEl.textContent = result.replace("ERROR:", "").trim();
-          errorEl.style.display = "block";
-        }
-      })
-      .catch(error => {
-        loadingEl.style.display = "none";
-        errorEl.textContent = "An unexpected error occurred. Please try again.";
-        errorEl.style.display = "block";
-        console.error("Fetch Error:", error);
-      });
+      if (response.trim() === "success") {
+        $(".sent-message").fadeIn();
+        $("#contact-form")[0].reset();
+      } else {
+        $(".error-message").fadeIn().text(response);
+      }
+    },
+    error: function () {
+      $(".loading").hide();
+      $(".error-message").fadeIn().text("Server error. Check PHP file.");
+    }
   });
-})();
+});

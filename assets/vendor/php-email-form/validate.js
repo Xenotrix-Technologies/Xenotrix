@@ -6,7 +6,7 @@ $("#contact-form").on("submit", function (e) {
   $(".error-message").hide();
 
   $.ajax({
-    url: "forms/contact.php",
+    url: "https://xenotrix.in/forms/contact.php",
     type: "POST",
     data: $(this).serialize(),
     success: function (response) {

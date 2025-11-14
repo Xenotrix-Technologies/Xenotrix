@@ -6,11 +6,14 @@ require 'PHPMailer.php';
 require 'SMTP.php';
 require 'Exception.php';
 
-header('Content-Type: application/json');
+header("Content-Type: text/plain; charset=UTF-8");
+ini_set('display_errors', 0);
+error_reporting(0);
 
-$response = ['status' => 'success', 'message' => 'Your message has been sent!'];
-echo json_encode($response);
-exit;
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    echo "ERROR: Invalid request.";
+    exit;
+}
 
 $name    = trim($_POST['name'] ?? '');
 $email   = trim($_POST['email'] ?? '');
@@ -18,57 +21,52 @@ $phone   = trim($_POST['phone'] ?? '');
 $subject = trim($_POST['subject'] ?? '');
 $message = trim($_POST['message'] ?? '');
 
-// Optional reCAPTCHA validation
-/*$recaptchaResponse = $_POST['recaptcha-response'] ?? '';
-$recaptchaSecret = 'YOUR_RECAPTCHA_SECRET_KEY';
-if ($recaptchaResponse) {
-    $recaptchaVerify = file_get_contents(
-        'https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $recaptchaResponse
-    );
-    $recaptchaData = json_decode($recaptchaVerify);
-    if (!$recaptchaData->success || $recaptchaData->score < 0.5) {
-        echo json_encode(['status' => 'error', 'message' => 'reCAPTCHA verification failed.']);
-        exit;
-    }
-}*/
-
-// Basic validation
 if (!$name || !$email || !$phone || !$subject || !$message) {
-    echo json_encode(['status' => 'error', 'message' => 'All fields are required.']);
+    echo "ERROR: All fields are required.";
     exit;
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo json_encode(['status' => 'error', 'message' => 'Invalid email address.']);
+    echo "ERROR: Invalid email.";
     exit;
 }
 
 $mail = new PHPMailer(true);
+
 try {
+    // SMTP SETTINGS
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'xenotrixtech@gmail.com';
-    $mail->Password   = 'dxez rnah ynlu yyht';
+    $mail->Username   = 'xenotrixtech@gmail.com';   // Gmail
+    $mail->Password   = 'bfaq tgbs xmxm jnmi';       // App Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom($email, $name);
+    // Gmail requires authenticated FROM
+    $mail->setFrom('xenotrixtech@gmail.com', 'Website Contact Form');
+    $mail->addReplyTo($email, $name);
+
+    // Receiver
     $mail->addAddress('sanjayskpy7@gmail.com');
 
+    // Email content
     $mail->isHTML(true);
     $mail->Subject = "New Contact Form: $subject";
-    $mail->Body    = "
+    $mail->Body = "
         <h2>Contact Form Submission</h2>
         <p><strong>Name:</strong> {$name}</p>
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Phone:</strong> {$phone}</p>
-        <p><strong>Service:</strong> {$subject}</p>
+        <p><strong>Subject:</strong> {$subject}</p>
         <p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message)) . "</p>
     ";
 
     $mail->send();
-    echo json_encode(['status' => 'success', 'message' => 'Your message has been sent successfully!']);
+    echo "SUCCESS: Email sent.";
+
 } catch (Exception $e) {
-    echo json_encode(['status' => 'error', 'message' => 'Mailer Error: ' . $mail->ErrorInfo]);
+    echo "ERROR: " . $mail->ErrorInfo;
 }
+
+exit;

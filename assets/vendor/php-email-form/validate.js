@@ -22,6 +22,7 @@
       method: "POST",
       body: formData
     })
+<<<<<<< Updated upstream
       .then(response => response.text())
       .then(result => {
         console.log("Server Response:", result);
@@ -43,5 +44,24 @@
         errorEl.style.display = "block";
         console.error("Fetch Error:", error);
       });
+=======
+    .then(response => response.text())
+    .then(data => {
+      loadingEl.style.display = 'none';
+      if (data.status === 'success') {
+        successEl.style.display = 'block';
+        form.reset();
+      } else {
+        errorEl.innerHTML = data.message || 'Form submission failed. Please try again.';
+        errorEl.style.display = 'block';
+      }
+    })
+    .catch(err => {
+      loadingEl.style.display = 'none';
+      errorEl.innerHTML = 'An error occurred. Please try again.';
+      errorEl.style.display = 'block';
+      console.error(err);
+    });
+>>>>>>> Stashed changes
   });
 })();

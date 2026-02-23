@@ -3227,3 +3227,9 @@ section,
 
 }
 
+.project-count {
+  font-size: 48px;
+  font-weight: 700;
+  color: #4e088a;
+  margin-bottom: 20px;
+}

@@ -45,7 +45,7 @@
           <li><a href="service.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://xenotrix-technologies.github.io/Xenotune/">Xenotune</a></li>
+          <li><a href="https://xenotune.xenotrix.in">Xenotune</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -180,9 +180,28 @@
                 />
               </div>
               <div class="experience-box" data-aos="zoom-in" data-aos-delay="300">
-                <div class="years">6+</div>
+                <div class="years" id="expMonths">0+</div>
                 <div class="text">Months of<br />Innovation</div>
               </div>
+
+              <script>
+                function calculateMonths(startDate) {
+                  const start = new Date(startDate);
+                  const now = new Date();
+
+                  let months =
+                    (now.getFullYear() - start.getFullYear()) * 12 +
+                    (now.getMonth() - start.getMonth());
+
+                  return months < 0 ? 0 : months;
+                }
+
+                // 🔹 Set your starting date here (YYYY, MM-1, DD)
+                const startDate = new Date(2025, 3, 7); // Example: Jan 1, 2025
+
+                const totalMonths = calculateMonths(startDate);
+                document.getElementById("expMonths").textContent = totalMonths + "+";
+              </script>
             </div>
           </div>
 
@@ -495,10 +514,10 @@
         </div>
       </div>
     </section>
-    <!-- /Steps Section -->
+  <!--Steps Section-->
 
     
-    <!-- Testimonials Section -->
+    <!--Testimonials Section-->
     <!--<section id="testimonials" class="testimonials section light-background">
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Testimonials</span>
@@ -701,15 +720,15 @@
 
       </div>
 
-    </section> /Testimonials Section -->
+    </section>--> <!--/Testimonials Section-->
 
-    <!-- Portfolio Section -->
+    <!--Portfolio Section-->
     <section id="portfolio" class="portfolio section">
-      <!-- Section Title -->
+      <!--Section Title-->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Product</h2>
         <p>Discover Xenotune — our powerful app built to simplify and elevate your digital experience.</p>
-      </div><!-- End Section Title -->
+      </div><!--End Section Title-->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -1188,10 +1207,12 @@
                   <div class="form-floating mb-3">
                     <select name="subject" id="subjectInput" class="form-control" required>
                       <option value="" disabled selected>Select a Service</option>
-                      <option value="Consulting">Consulting</option>
-                      <option value="Development">Development</option>
+                      <option value="Consulting">Web Development</option>
+                      <option value="Development">Mobile App Development</option>
+                      <option value="Development">Web App Development</option>
                       <option value="Project Service">Project Service</option>
-                      <option value="Analysis">Analysis</option>
+                      <option value="Analysis">Data Analysis</option>
+                      <option value="Analysis">AI Integration</option>
                     </select>
                     <label for="subjectInput">Service</label>
                   </div>

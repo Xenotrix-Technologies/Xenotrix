@@ -1,162 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Our Services & Pricing</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Xenotrix - Website Pricing</title>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<style>
-  .package {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    transition: 0.3s;
-  }
-  .package:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-  .package img {
-    max-width: 60px;
-    margin-bottom: 10px;
-  }
-  .price {
-    font-size: 28px;
-    font-weight: bold;
-    color: #007bff;
-  }
-  .features li {
-    margin-bottom: 5px;
-    list-style: none;
-  }
-</style>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="container py-5">
-  <h2 class="text-center mb-4">Our Services & Pricing</h2>
+<!-- ===== Header (Same as Your Template) ===== -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container position-relative d-flex align-items-center justify-content-between">
 
-  <!-- AI Integration -->
-  <div class="row">
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-cpu" style="font-size:50px;color: #007bff;"></i>
-        <h4>AI Integration</h4>
-        <div class="price">₹24,999/-</div>
-        <ul class="features text-start">
-          <li>Custom Model Training</li>
-          <li>Chatbot & NLP Solutions</li>
-          <li>Automation & Prediction Tools</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
-    </div>
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <h1 class="sitename">Xenotrix</h1><span>.</span>
+    </a>
 
-    <!-- Web Development -->
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-code-slash" style="font-size:50px;color: #007bff;"></i>
-        <h4>Web Development</h4>
-        <div class="price">₹15,000/-</div>
-        <ul class="features text-start">
-          <li>Responsive Websites</li>
-          <li>CMS Integration</li>
-          <li>SEO-Friendly</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
-    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
 
-    <!-- App Development -->
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-phone" style="font-size:50px;color: #007bff;"></i>
-        <h4>App Development</h4>
-        <div class="price">₹30,000/-</div>
-        <ul class="features text-start">
-          <li>Android & iOS Apps</li>
-          <li>API + Backend</li>
-          <li>Push & Firebase</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
+  </div>
+</header>
+<main class="main">
+
+  <!-- ===== Page Title ===== -->
+  <div class="page-title light-background">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <h1 class="mb-2 mb-lg-0">Our Service Pricing</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">Pricing</li>
+        </ol>
+      </nav>
     </div>
   </div>
 
-  <!-- 2nd Row -->
-  <div class="row">
+  <!-- ===== Pricing Section ===== -->
+  <section class="section">
+    <div class="container" data-aos="fade-up">
 
-    <!-- Data Analytics -->
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-bar-chart" style="font-size:50px;color: #007bff;"></i>
-        <h4>Data Analytics</h4>
-        <div class="price">₹18,000/-</div>
-        <ul class="features text-start">
-          <li>Dashboards & Reports</li>
-          <li>Power BI / Python</li>
-          <li>Business Insights</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
+      <div class="section-title text-center mb-5">
+        <h2 class="text-accent">Affordable & Scalable Service Packages</h2>
+        <p>Choose the right service package based on your business needs.</p>
+      </div>
+
+      <div class="row gy-4">
+
+        <!-- AI Integration -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>AI Integration</h4>
+            <h3 class="text-accent mt-3">Starting from ₹40,000</h3>
+            <ul class="mt-3">
+              <li>Chatbot Development</li>
+              <li>AI Automation Systems</li>
+              <li>Custom AI Models</li>
+              <li>API Integration</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Get Quote</a>
+              <a href="ai-integration-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>Web Development</h4>
+            <h3 class="text-accent mt-3">Starting from ₹15,000</h3>
+            <ul class="mt-3">
+              <li>Business Websites</li>
+              <li>E-commerce Solutions</li>
+              <li>SEO Optimized</li>
+              <li>Admin Dashboard</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Get Quote</a>
+              <a href="website-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Services -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>Project Services</h4>
+            <h3 class="text-accent mt-3">Starting from ₹5,000</h3>
+            <ul class="mt-3">
+              <li>Academic Projects</li>
+              <li>Mini & Major Projects</li>
+              <li>Documentation Support</li>
+              <li>Technical Guidance</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Get Support</a>
+              <a href="project-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Development -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>App Development</h4>
+            <h3 class="text-accent mt-3">Starting from ₹30,000</h3>
+            <ul class="mt-3">
+              <li>Android & iOS Apps</li>
+              <li>Custom UI/UX</li>
+              <li>API Integration</li>
+              <li>Store Deployment</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Discuss Project</a>
+              <a href="app-development-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>Digital Marketing</h4>
+            <h3 class="text-accent mt-3">Starting from ₹8,000 / month</h3>
+            <ul class="mt-3">
+              <li>SEO Optimization</li>
+              <li>Social Media Marketing</li>
+              <li>Google Ads Campaigns</li>
+              <li>Performance Reports</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Start Marketing</a>
+              <a href="digital-marketing-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>Data Analytics</h4>
+            <h3 class="text-accent mt-3">Starting from ₹10,000</h3>
+            <ul class="mt-3">
+              <li>Data Cleaning & EDA</li>
+              <li>Dashboard Development</li>
+              <li>KPI Tracking</li>
+              <li>Business Reports</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Analyze Data</a>
+              <a href="data-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface p-4 h-100 shadow d-flex flex-column">
+            <h4>UI/UX Design</h4>
+            <h3 class="text-accent mt-3">Starting from ₹5,000</h3>
+            <ul class="mt-3">
+              <li>Website & App UI</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Design System</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="contact.html" class="btn btn-accent w-100 mb-2">Get Design</a>
+              <a href="uiux-pricing.html" class="btn btn-outline-accent w-100">View More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+<hr>
+<!-- ===== Footer (Keep Same As Yours) ===== -->
+<!-- ======= Footer ======= -->
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row gy-3">
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Our Location</h4>
+            <p>Thrissur, Kerala</p>
+            <p>India - 680594</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Phone:</strong> <span>+91 9539251789</span><br>
+              <strong>Phone:</strong> <span>+91 7736736495</span><br>
+              <strong>Phone:</strong> <span>+91 7025924926</span><br>
+              <strong>Email:</strong> <span>xenotrixtech@gmail.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Working Hours</h4>
+            <p>
+              <strong>Mon - Sat:</strong> <span>10AM - 8PM</span><br>
+              <strong>Sunday:</strong> <span>Closed</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://github.com/Xenotrix-Technologies" target="_blank" class="github"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/company/xenotrix-technologies" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/xenotrix_" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- UI/UX Design -->
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-palette" style="font-size:50px;color: #007bff;"></i>
-        <h4>UI/UX Design</h4>
-        <div class="price">₹12,000/-</div>
-        <ul class="features text-start">
-          <li>Wireframes & Prototypes</li>
-          <li>User-Centric Interfaces</li>
-          <li>Brand Aligned Visuals</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
+    <div class="container copyright text-center mt-4">
+        <div>
+            <a href="policyprivacy.html" class="text-decoration-none" style="color: var(--default-color);">Privacy Policy</a>
+          </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Xenotrix Technologies</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://www.xenotrix.in">Xenotrix Team</a>
       </div>
     </div>
+  </footer>
+  <!-- End Footer -->
 
-    <!-- Digital Marketing -->
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-megaphone" style="font-size:50px;color: #007bff;"></i>
-        <h4>Digital Marketing</h4>
-        <div class="price">₹9,999/-</div>
-        <ul class="features text-start">
-          <li>SEO / SEM</li>
-          <li>Social Ads</li>
-          <li>Brand Promotion</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
-    </div>
-  </div>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Project Services -->
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="package text-center">
-        <i class="bi bi-journal-code" style="font-size:50px;color: #007bff;"></i>
-        <h4>Project Services</h4>
-        <div class="price">Custom</div>
-        <ul class="features text-start">
-          <li>Project Consulting</li>
-          <li>Deployment Support</li>
-          <li>Maintenance & QA</li>
-        </ul>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
-    </div>
-  </div>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-</div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>

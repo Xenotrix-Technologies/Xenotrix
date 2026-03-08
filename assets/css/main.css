@@ -1,47 +1,51 @@
 /* ====== Fonts ====== */
 :root {
   /* Fonts */
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat", sans-serif;
-  --nav-font: "Inter", sans-serif;
+--default-font: "Poppins", system-ui, sans-serif;
+--heading-font: "Space Grotesk", sans-serif;
+--nav-font: "Manrope", sans-serif;
+  /* Global Colors - Dark Mode */
+  --background-color: #050C1F;  /* Main dark background */
+  --surface-color: #02213E;     /* Cards / containers */
+  
+  --default-color: #FFFFFF;     /* Main text */
+  --heading-color: #FFFFFF;     /* Headings */
 
-  /* Global Colors */
-  --background-color: #050529; /* Almost black background for the entire site */
-  --default-color: #FFFFFF;     /* Primary text color for readability */
-  --heading-color: #FFFFFF;     /* Headings in bright white */
-  --accent-color: #bf32db;      /* Neon green accent for buttons, links, highlights */
-  --accent-color-2: #31ff1e6c;    /* Electric blue secondary accent for icons or highlights */
-  --hover-color: #FF0099;       /* Vivid neon pink for hover effects */
-  --surface-color: #1b08418f;     /* Slightly lighter dark surface for cards, boxes */
-  --contrast-color: #FFFFFF;    /* High contrast text on dark backgrounds */
+  --accent-color: #00BAFF;      /* Primary accent (blue) */
+  --accent-color-2: #00D0C6;    /* Secondary accent (teal) */
+  --hover-color: #00D0C6;       /* Hover highlight */
 
-  /* Navigation Menu Colors */
-  --nav-color: #FFFFFF;               /* White default nav links */
-  --nav-hover-color: #3d36be;         /* Neon green hover/active state */
-  --nav-mobile-background-color: #050529; /* Dark background for mobile nav */
-  --nav-dropdown-background-color: #1A1A1A; /* Slightly lighter dark dropdown */
-  --nav-dropdown-color: #FFFFFF;      /* White dropdown text */
-  --nav-dropdown-hover-color: #FF0099; /* Neon pink on hover dropdown items */
+  --contrast-color: #FFFFFF;
+
+  /* Navigation */
+  --nav-color: #FFFFFF;
+  --nav-hover-color: #00BAFF;
+  --nav-mobile-background-color: #050C1F;
+  --nav-dropdown-background-color: #02213E;
+  --nav-dropdown-color: #FFFFFF;
+  --nav-dropdown-hover-color: #00D0C6;
 
   /* Smooth scroll */
   scroll-behavior: smooth;
 }
 
-/* Color Presets */
+/* Section Background Variations */
+
 .light-background {
-  --background-color: #050529; /* Dark gray/lightened dark section */
-  --surface-color: #2A2A2A;    /* Card or section surfaces */
+  --background-color: #02213E;
+  --surface-color: #02213E;
 }
 
 .dark-background {
-  --background-color: #050529; /* Base dark mode */
+  --background-color: #050C1F;
   --default-color: #FFFFFF;
   --heading-color: #FFFFFF;
-  --surface-color: #1A1A1A;
+  --surface-color: #02213E;
   --contrast-color: #FFFFFF;
 }
 
-/* Additional neon utility classes */
+/* Utility Classes */
+
 .text-accent {
   color: var(--accent-color);
 }
@@ -59,16 +63,18 @@
   color: var(--contrast-color);
 }
 
+/* Buttons */
+
 .btn-accent {
   background-color: var(--accent-color);
-  color: var(--contrast-color);
+  color: #FFFFFF;
+  border: none;
 }
 
 .btn-accent:hover {
-  background-color: var(--hover-color);
+  background-color: var(--accent-color-2);
   color: #FFFFFF;
 }
-
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes

@@ -3187,3 +3187,14 @@ section,
   color: #4e088a;
   margin-bottom: 20px;
 }
+
+.clients img {
+  max-height: 60px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.clients img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}

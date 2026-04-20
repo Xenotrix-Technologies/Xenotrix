@@ -21,13 +21,6 @@
     <loc>https://xenotrix.in/service.html</loc>
     <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
@@ -50,56 +43,6 @@
     <lastmod>2025-11-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-  </url>
-
-  <!-- Service Pages (No Folder) -->
-  <url>
-    <loc>https://xenotrix.in/ai-integration-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/website-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/project-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/app-development-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/digital-marketing-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/data-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xenotrix.in/uiux-pricing.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
 </urlset>

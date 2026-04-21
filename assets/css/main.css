@@ -5,7 +5,7 @@
 --heading-font: "Space Grotesk", sans-serif;
 --nav-font: "Manrope", sans-serif;
   /* Global Colors - Dark Mode */
-  --background-color: #050C1F;  /* Main dark background */
+  --background-color: #0c1735;  /* Main dark background */
   --surface-color: #02213E;     /* Cards / containers */
   
   --default-color: #FFFFFF;     /* Main text */
@@ -19,9 +19,9 @@
 
   /* Navigation */
   --nav-color: #FFFFFF;
-  --nav-hover-color: #00BAFF;
-  --nav-mobile-background-color: #050C1F;
-  --nav-dropdown-background-color: #02213E;
+  --nav-hover-color: #063e98;
+  --nav-mobile-background-color: #050c1f70;
+  --nav-dropdown-background-color: #02213e42;
   --nav-dropdown-color: #FFFFFF;
   --nav-dropdown-hover-color: #00D0C6;
 
@@ -2480,7 +2480,6 @@ section,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .contact .form-container p {

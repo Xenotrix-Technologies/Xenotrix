@@ -441,7 +441,7 @@ h6 {
 .social-icon {
   width: 42px;
   height: 42px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(234, 4, 4, 0.08);
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -682,8 +682,7 @@ section,
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 80px;
+  padding-top: 100px;
   overflow: hidden;
 }
 
@@ -726,7 +725,7 @@ section,
 }
 
 .hero .hero-content h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 2rem;
   line-height: 1.1;

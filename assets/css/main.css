@@ -1,29 +1,40 @@
 /* ====== Fonts ====== */
 :root {
   /* Fonts */
---default-font: "Poppins", system-ui, sans-serif;
---heading-font: "Space Grotesk", sans-serif;
---nav-font: "Manrope", sans-serif;
-  /* Global Colors - Dark Mode */
-  --background-color: #0c1735;  /* Main dark background */
-  --surface-color: #02213E;     /* Cards / containers */
+  --default-font: "Inter", system-ui, -apple-system, sans-serif;
+  --heading-font: "Outfit", sans-serif;
+  --nav-font: "Inter", sans-serif;
+
+  /* Global Colors - Professional Dark Theme */
+  --background-color: #0f172a;  /* Deep Slate */
+  --surface-color: #1e293b;     /* Slate */
+  --surface-alt: #334155;       /* Lighter Slate */
   
-  --default-color: #FFFFFF;     /* Main text */
-  --heading-color: #FFFFFF;     /* Headings */
+  --default-color: #cbd5e1;     /* Slate-300 */
+  --heading-color: #f8fafc;     /* Slate-50 */
 
-  --accent-color: #00BAFF;      /* Primary accent (blue) */
-  --accent-color-2: #00D0C6;    /* Secondary accent (teal) */
-  --hover-color: #00D0C6;       /* Hover highlight */
+  --accent-color: #38bdf8;      /* Sky-400 */
+  --accent-color-2: #818cf8;    /* Indigo-400 */
+  --hover-color: #0ea5e9;       /* Sky-500 */
 
-  --contrast-color: #FFFFFF;
+  --contrast-color: #ffffff;
+
+  .text-color{
+    color: #a0b2b4;
+  }
 
   /* Navigation */
-  --nav-color: #FFFFFF;
-  --nav-hover-color: #063e98;
-  --nav-mobile-background-color: #050c1f70;
-  --nav-dropdown-background-color: #02213e42;
-  --nav-dropdown-color: #FFFFFF;
-  --nav-dropdown-hover-color: #00D0C6;
+  --nav-color: #f8fafc;
+  --nav-hover-color: #38bdf8;
+  --nav-mobile-background-color: rgba(15, 23, 42, 0.95);
+  --nav-dropdown-background-color: rgba(30, 41, 59, 0.9);
+  --nav-dropdown-color: #f8fafc;
+  --nav-dropdown-hover-color: #38bdf8;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
   /* Smooth scroll */
   scroll-behavior: smooth;
@@ -32,16 +43,16 @@
 /* Section Background Variations */
 
 .light-background {
-  --background-color: #02213E;
-  --surface-color: #02213E;
+  --background-color: #1e293b;
+  --surface-color: #334155;
 }
 
 .dark-background {
-  --background-color: #050C1F;
-  --default-color: #FFFFFF;
-  --heading-color: #FFFFFF;
-  --surface-color: #02213E;
-  --contrast-color: #FFFFFF;
+  --background-color: #020617; /* Slate-950 */
+  --default-color: #cbd5e1;
+  --heading-color: #f8fafc;
+  --surface-color: #1e293b;
+  --contrast-color: #ffffff;
 }
 
 /* Utility Classes */
@@ -69,11 +80,33 @@
   background-color: var(--accent-color);
   color: #FFFFFF;
   border: none;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: 0.3s;
 }
 
 .btn-accent:hover {
   background-color: var(--accent-color-2);
   color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-10px);
+  box-shadow: var(--glass-shadow);
 }
 
 /*--------------------------------------------------------------
@@ -86,7 +119,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: #FFFFFF;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -110,12 +143,15 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #050529;
+  --background-color: rgba(15, 23, 42, 0.8);
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .header .logo {
@@ -177,7 +213,8 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(7, 7, 8, 0.8);
+  --background-color: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -636,24 +673,25 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 800;
   margin-bottom: 20px;
   padding-bottom: 0;
   position: relative;
   z-index: 2;
+  color: var(--heading-color);
+  letter-spacing: -0.02em;
 }
 
 .section-title span {
   position: absolute;
-  top: 4px;
-  color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  top: -10px;
+  color: rgba(56, 189, 248, 0.05);
   left: 0;
   right: 0;
   z-index: 1;
-  font-weight: 700;
-  font-size: 52px;
+  font-weight: 900;
+  font-size: 64px;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -662,6 +700,11 @@ section,
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+  font-size: 1.1rem;
+  color: var(--default-color);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 575px) {

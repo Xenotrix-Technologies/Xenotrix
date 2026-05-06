@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -56,80 +56,69 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-  <div class="hero-background">
-    <div class="hero-overlay"></div>
-  </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-10">
-          <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-            <h1>World-Class Web Development & Digital Marketing Solutions</h1>
-            <p>
-              Xenotrix Technologies is a leading global provider of website development,
-              mobile app development, SEO, and digital marketing services. We help businesses
-              increase online visibility, generate more leads, and boost sales with
-              high-performance websites and data-driven marketing strategies.
-            </p>
-            <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
-              <a href="about.html" class="btn btn-primary">Start Your Journey</a>
-              <a href="service.html" class="btn btn-outline">Our Services</a>
+    <section id="hero" class="hero section d-flex align-items-center">
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-10">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <h1 class="display-3 fw-bold mb-4">World-Class Web Development & <span class="text-primary">Digital Marketing</span> Solutions</h1>
+              <p class="lead mb-5 mx-auto">
+                Xenotrix Technologies is a leading global provider of website development,
+                mobile app development, SEO, and digital marketing services. We help businesses
+                increase online visibility and boost sales with high-performance strategies.
+              </p>
+              <div class="hero-btns d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="about.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3">Start Your Journey</a>
+                <a href="service.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">Our Services</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
     <!-- About Section -->
     <section id="about" class="about section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">About Us</span>
-        <h2>Best Web Development & Digital Marketing Company</h2>
-        <p class="highlight-text">
+        <span>About Us</span>
+        <h2>Premium Web & Marketing Partner</h2>
+        <p>
           Xenotrix Technologies is a results-driven IT company specializing in
           website development, SEO, and digital marketing. We help businesses
-          rank higher on Google, attract customers, and grow faster using
-          innovative technology and smart strategies.
+          rank higher and grow faster using innovative technology.
         </p>
       </div>
       <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gx-0 gx-lg-5 gy-5 align-items-center">
+        <div class="row align-items-center gy-5">
           <!-- About Image -->
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
-            <div class="image-wrapper">
-              <div class="image-box">
-                <img
-                  src="assets/img/about/about-square-15.webp"
-                  class="img-fluid"
-                  alt="Xenotrix Team"
-                  loading="lazy"
-                />
-              </div>
-              <div class="experience-box" data-aos="zoom-in" data-aos-delay="300">
-                <div class="years" id="expMonths">0+</div>
-                <div class="text">Months of<br />Innovation</div>
+            <div class="position-relative overflow-hidden rounded-4 shadow-lg">
+              <img
+                src="assets/img/about/about-square-15.webp"
+                class="img-fluid w-100"
+                alt="Xenotrix Team"
+                loading="lazy"
+              />
+              <div class="experience-box position-absolute bottom-0 end-0 m-4 glass-card p-4 text-center">
+                <div class="years h2 fw-bold text-primary mb-0" id="expMonths">0+</div>
+                <div class="text small fw-semibold">Months of<br />Innovation</div>
               </div>
 
               <script>
                 function calculateMonths(startDate) {
                   const start = new Date(startDate);
                   const now = new Date();
-
-                  let months =
-                    (now.getFullYear() - start.getFullYear()) * 12 +
-                    (now.getMonth() - start.getMonth());
-
+                  let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
                   return months < 0 ? 0 : months;
                 }
-
-                // 🔹 Set your starting date here (YYYY, MM-1, DD)
-                const startDate = new Date(2025, 3, 7); // Example: Jan 1, 2025
-
+                const startDate = new Date(2025, 3, 7);
                 const totalMonths = calculateMonths(startDate);
                 document.getElementById("expMonths").textContent = totalMonths + "+";
               </script>
@@ -138,63 +127,37 @@
 
           <!-- About Content -->
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="content">
-              <div class="section-header">
-                <h2>Transforming Ideas Into Intelligent Experiences</h2>
-              </div>
-
-              <p class="highlight-text">
+            <div class="ps-lg-5">
+              <h2 class="display-6 fw-bold mb-4">Transforming Ideas Into <span class="text-primary">Intelligent</span> Experiences</h2>
+              <p class="lead mb-5">
                 Xenotrix Technologies specializes in building innovative products and digital
-                ecosystems that merge design, data, and AI to accelerate growth and success.
+                ecosystems that merge design, data, and AI to accelerate growth.
               </p>
 
               <div class="features-list">
-                <!-- Feature 1 -->
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="icon-box">
-                    <i class="bi bi-code-slash"></i>
+                <div class="feature-item d-flex mb-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box me-3">
+                    <i class="bi bi-check-circle-fill text-primary fs-4"></i>
                   </div>
-                  <div class="text">
-                    <h4>Smart Development</h4>
-                    <p>
-                      From powerful websites to intelligent mobile apps, we craft
-                      performance-driven solutions using modern technologies and frameworks.
-                    </p>
+                  <div>
+                    <h4 class="h5 fw-bold mb-1">Smart Development</h4>
+                    <p class="small text-color mb-0">Powerful websites and intelligent mobile apps crafted with modern frameworks.</p>
                   </div>
                 </div>
-
-                <!-- Feature 2 -->
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="icon-box">
-                    <i class="bi bi-cpu"></i>
+                <div class="feature-item d-flex mb-4" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="icon-box me-3">
+                    <i class="bi bi-check-circle-fill text-primary fs-4"></i>
                   </div>
-                  <div class="text">
-                    <h4>AI & Automation</h4>
-                    <p>
-                      Our AI integration services bring automation, efficiency, and
-                      intelligence to your workflows, helping your business operate smarter.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="icon-box">
-                    <i class="bi bi-rocket-takeoff"></i>
-                  </div>
-                  <div class="text">
-                    <h4>Digital Growth Strategy</h4>
-                    <p>
-                      We partner with businesses to develop scalable, data-driven strategies
-                      that ensure lasting growth and sustainable competitive advantage.
-                    </p>
+                  <div>
+                    <h4 class="h5 fw-bold mb-1">AI & Automation</h4>
+                    <p class="small text-color mb-0">Bringing intelligence to your workflows for maximum efficiency.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="cta-buttons">
-                <a href="#services" class="btn-learn-more">Learn More</a>
-                <a href="#contact" class="btn-get-started">Get Started</a>
+              <div class="cta-buttons mt-5 d-flex gap-3">
+                <a href="#services" class="btn btn-primary rounded-pill px-4 py-2">Learn More</a>
+                <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 py-2">Get Started</a>
               </div>
             </div>
           </div>
@@ -224,84 +187,72 @@
           <div class="row g-4">
 
             <!-- Service 1 -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-laptop"></i>
+            <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="glass-card h-100">
+                <div class="service-icon mb-4">
+                  <i class="bi bi-laptop fs-1 text-primary"></i>
                 </div>
                 <div class="service-content">
-                  <span class="service-number">01</span>
-                  <h3 class="service-title">Website & App Development</h3>
-                  <p class="service-text">
-                    We design and develop SEO-optimized websites and mobile apps that
-                    deliver speed, performance, and high conversion rates.
+                  <h3 class="h4 mb-3">Web Development</h3>
+                  <p class="small text-color mb-4">
+                    SEO-optimized websites and mobile apps that deliver speed, performance, and high conversion rates.
                   </p>
-                  <a href="service.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
+                  <a href="service.html" class="stretched-link text-primary fw-bold">
+                    Learn More <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
             </div>
 
             <!-- Service 2 -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-cpu"></i>
+            <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="glass-card h-100">
+                <div class="service-icon mb-4">
+                  <i class="bi bi-megaphone fs-1 text-primary"></i>
                 </div>
                 <div class="service-content">
-                  <span class="service-number">02</span>
-                  <h3 class="service-title">Digital Marketing & SEO</h3>
-                  <p class="service-text">
-                    Grow your business with our expert SEO, social media marketing, and
-                    paid advertising strategies that increase traffic, leads, and sales.
+                  <h3 class="h4 mb-3">Digital Marketing</h3>
+                  <p class="small text-color mb-4">
+                    Expert SEO, social media, and paid ads strategies that increase traffic, leads, and sales.
                   </p>
-                  <a href="service.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
+                  <a href="service.html" class="stretched-link text-primary fw-bold">
+                    Learn More <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
             </div>
 
             <!-- Service 3 -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-database"></i>
+            <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="glass-card h-100">
+                <div class="service-icon mb-4">
+                  <i class="bi bi-bar-chart fs-1 text-primary"></i>
                 </div>
                 <div class="service-content">
-                  <span class="service-number">03</span>
-                  <h3 class="service-title">Data Analytics & Business Insights</h3>
-                  <p class="service-text">
-                    Make smarter decisions with data-driven insights, dashboards, and
-                    analytics solutions tailored to your business.
+                  <h3 class="h4 mb-3">Data Analytics</h3>
+                  <p class="small text-color mb-4">
+                    Data-driven insights, dashboards, and analytics solutions tailored to your business goals.
                   </p>
-                  <a href="service.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
+                  <a href="service.html" class="stretched-link text-primary fw-bold">
+                    Learn More <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
             </div>
 
             <!-- Service 4 -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-journal-code"></i>
+            <div class="col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="glass-card h-100">
+                <div class="service-icon mb-4">
+                  <i class="bi bi-code-square fs-1 text-primary"></i>
                 </div>
                 <div class="service-content">
-                  <span class="service-number">04</span>
-                  <h3 class="service-title">Custom Software Solutions</h3>
-                  <p class="service-text">
-                    We build scalable and secure custom software tailored to your
-                    business needs using modern technologies.
+                  <h3 class="h4 mb-3">Custom Software</h3>
+                  <p class="small text-color mb-4">
+                    Scalable and secure custom software tailored to your specific business needs.
                   </p>
-                  <a href="service.html" class="service-link">
-                    Learn More
-                    <i class="bi bi-arrow-right"></i>
+                  <a href="service.html" class="stretched-link text-primary fw-bold">
+                    Learn More <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -347,111 +298,59 @@
 
 
     <!-- Steps Section -->
-<section id="steps" class="steps section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <span class="description-title">Our Process</span>
-    <h2>How We Build at Xenotrix</h2>
-    <p>
-      Every Xenotrix project follows a structured and collaborative process — from concept to completion — ensuring quality, innovation, and scalability at every step.
-    </p>
-  </div>
-  <!-- End Section Title -->
+    <section id="steps" class="steps section">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Process</span>
+        <h2>How We Deliver Excellence</h2>
+        <p>Our structured process ensures quality, innovation, and scalability at every stage of development.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="steps-5">
-          <div class="process-container">
-
-            <!-- Step 1 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="content">
-                <span class="step-number">01</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-lightbulb"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Discovery & Planning</h3>
-                    <p>
-                      We begin by understanding your goals, challenges, and vision. Through research and strategic consultation, we define a clear roadmap aligned with your business objectives.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass-card text-center h-100">
+              <div class="h1 fw-bold text-primary opacity-25 mb-4">01</div>
+              <i class="bi bi-lightbulb fs-1 text-primary mb-3 d-block"></i>
+              <h3 class="h5 fw-bold mb-3">Discovery</h3>
+              <p class="small text-color">Understanding your vision and defining a strategic roadmap for success.</p>
             </div>
-            <!-- End Process Item -->
-
-            <!-- Step 2 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="content">
-                <span class="step-number">02</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-gear"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Design & Development</h3>
-                    <p>
-                      Our experts design intuitive interfaces and develop robust digital solutions — from responsive web platforms to AI-driven applications — using modern technologies and agile workflows.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="glass-card text-center h-100">
+              <div class="h1 fw-bold text-primary opacity-25 mb-4">02</div>
+              <i class="bi bi-gear fs-1 text-primary mb-3 d-block"></i>
+              <h3 class="h5 fw-bold mb-3">Development</h3>
+              <p class="small text-color">Crafting robust solutions using agile workflows and modern tech stacks.</p>
             </div>
-            <!-- End Process Item -->
-
-            <!-- Step 3 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="content">
-                <span class="step-number">03</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-search"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Testing & Quality Assurance</h3>
-                    <p>
-                      Rigorous testing ensures every product performs flawlessly. We validate functionality, performance, and security — delivering a stable and seamless user experience.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="glass-card text-center h-100">
+              <div class="h1 fw-bold text-primary opacity-25 mb-4">03</div>
+              <i class="bi bi-search fs-1 text-primary mb-3 d-block"></i>
+              <h3 class="h5 fw-bold mb-3">Testing</h3>
+              <p class="small text-color">Rigorous quality assurance to ensure flawless performance and security.</p>
             </div>
-            <!-- End Process Item -->
-
-            <!-- Step 4 -->
-            <div class="process-item" data-aos="fade-up" data-aos-delay="500">
-              <div class="content">
-                <span class="step-number">04</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-rocket-takeoff"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Deployment & Support</h3>
-                    <p>
-                      Once everything is ready, we deploy your solution and provide continuous maintenance, updates, and support — ensuring long-term success and scalability.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="glass-card text-center h-100">
+              <div class="h1 fw-bold text-primary opacity-25 mb-4">04</div>
+              <i class="bi bi-rocket-takeoff fs-1 text-primary mb-3 d-block"></i>
+              <h3 class="h5 fw-bold mb-3">Launch</h3>
+              <p class="small text-color">Deployment followed by continuous support and updates for long-term growth.</p>
             </div>
-            <!-- End Process Item -->
-
           </div>
         </div>
       </div>
     </section>
-  <!--Steps Section-->
+    <!-- /Steps Section -->
 
     
-    <!--Testimonials Section-->
-    <section id="testimonials" class="testimonials section light-background">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Testimonials</span>
-        <h2>Client Testimonials</h2>
-        <p>What our valued clients say about working with us</p>
+        <span>Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Trusted by industry leaders and businesses worldwide for digital excellence.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -661,31 +560,32 @@
 
       </div>
     </section>-->
-    <!--Portfolio Section-->
-    <section id="portfolio" class="portfolio section">
-      <!--Section Title-->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section overflow-hidden">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Product</h2>
+        <span>Product</span>
+        <h2>Featured Solution</h2>
         <p>Discover Xenotune — our powerful app built to simplify and elevate your digital experience.</p>
-      </div><!--End Section Title-->
+      </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="portfolio-card">
-              <div class="portfolio-image position-relative">
-                <a href="portfolio.html" target="_blank" rel="noopener noreferrer" class="details-link">
-                  <img src="assets/img/portfolio/xenotune/xenotune.png" class="img-fluid rounded-4" alt="Xenotune App Preview" loading="lazy">
-                </a>
-                  <div class="portfolio-overlay">
+            <div class="glass-card overflow-hidden p-0">
+              <div class="row g-0">
+                <div class="col-md-6 overflow-hidden">
+                  <img src="assets/img/portfolio/xenotune/xenotune.png" class="img-fluid h-100 object-fit-cover" alt="Xenotune" />
                 </div>
-              </div>
-              <div class="portfolio-content text-center mt-4">
-                <h3>Xenotune</h3>
-                <h6>Focus. Relax. Sleep.</h6>
-                <p>
-                  Xenotune generates AI-powered soundscapes that enhance focus, relaxation, and sleep by optimizing your mental state. 
-                  and offers full customization
-                </p>
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="p-5">
+                    <h3 class="display-6 fw-bold text-primary mb-2">Xenotune</h3>
+                    <p class="h5 fw-light mb-4">Focus. Relax. Sleep.</p>
+                    <p class="mb-5 text-color">
+                      Xenotune generates AI-powered soundscapes that enhance focus, relaxation, and sleep by optimizing your mental state. Enjoy a fully customizable acoustic environment tailored to your needs.
+                    </p>
+                    <a href="portfolio.html" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow">Explore Features</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1053,240 +953,127 @@
 <!-- /FAQ Section -->
 
     <!-- Contact Section -->
-      <section id="contact" class="contact section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Contact</span>
+        <h2>Get In Touch</h2>
+        <p>Ready to start your digital transformation? Contact us today for a free consultation.</p>
+      </div>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <span class="description-title">Contact Us</span>
-          <h2>Get in Touch with Xenotrix</h2>
-          <p>Have a project idea or want to collaborate with us? Reach out — we’d love to hear from you.</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-          <div class="contact-wrapper">
-            
-            <!-- Contact Info -->
-            <div class="contact-info-panel">
-              <div class="contact-info-header">
-                <h3>Contact Information</h3>
-                <p>We’re always open to discuss your ideas and help bring your vision to life with AI, Data, and Web innovation.</p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-5">
+            <div class="glass-card h-100">
+              <h3 class="fw-bold mb-4">Contact Information</h3>
+              <div class="info-item d-flex mb-4">
+                <i class="bi bi-geo-alt fs-4 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Location</h4>
+                  <p class="small text-color mb-0">Thrissur, Kerala, India - 680594</p>
+                </div>
               </div>
-
-              <div class="contact-info-cards">
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-pin-map-fill"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Our Location</h4>
-                    <p>Thrissur, Kerala, India</p>
-                  </div>
+              <div class="info-item d-flex mb-4">
+                <i class="bi bi-envelope fs-4 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Email</h4>
+                  <p class="small text-color mb-0">xenotrixtech@gmail.com</p>
                 </div>
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-envelope-open"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Email Us</h4>
-                    <p>xenotrixtech@gmail.com</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-telephone-fill"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Call Us</h4>
-                    <p>+91 9995544316</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="icon-container">
-                    <i class="bi bi-clock-history"></i>
-                  </div>
-                  <div class="card-content">
-                    <h4>Working Hours</h4>
-                    <p>Monday - Saturday: 10AM - 8PM</p>
-                  </div>
-                </div>
-                  <a href="https://wa.me/919995544316?text=Hi%2C%20I%27m%20interested%20in%20your%20services.%20Can%20you%20please%20share%20more%20details%3F" 
-                    target="_blank">
-                    <img src="assets/img/Whatsapp.png" 
-                        alt="Contact Image" 
-                        class="contact-image mt-3" 
-                        loading="lazy">
-                  </a>
               </div>
-
-              <div class="social-links-panel">
-                <h5>Connect With Us</h5>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/company/xenotrixtech" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://github.com/Xenotrix-Technologies" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="https://www.instagram.com/xenotrix_" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="mailto:xenotrixtechnologies@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+              <div class="info-item d-flex mb-4">
+                <i class="bi bi-telephone fs-4 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Call Us</h4>
+                  <p class="small text-color mb-0">+91 9995544316</p>
+                </div>
+              </div>
+              <div class="social-links d-flex mt-5 gap-3">
+                <a href="https://github.com/Xenotrix-Technologies" target="_blank" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/company/xenotrixtech" target="_blank" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/xenotrix_" target="_blank" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+                <div
+                  <button class="btn btn-success rounded-pill px-5 py-3 fw-bold shadow"><a href="https://wa.me/919995544316" target="_blank">Chat on Whatsapp</a></button>
                 </div>
               </div>
             </div>
-            <!-- End Contact Info -->
+          </div>
 
-            <!-- Contact Form + Map -->
-            <div class="contact-form-panel">
-              <div class="map-container">
-                <iframe 
-                  src="https://www.google.com/maps?q=Thrissur+Kerala,+India&output=embed"
-                  width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
-              </div>
-
-              <div class="form-container">
-                <h3>Send Us a Message</h3>
-                <p>Let’s create something amazing together. Fill out the form below and we’ll get back to you shortly.</p>
-
-                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST" role="form">
-
-                  <!-- REQUIRED Web3Forms Access Key -->
-                  <input type="hidden" name="access_key" value="de1376d2-497a-4736-aac2-0e668daa6034">
-
-                  <div class="form-floating mb-3">
-                    <input type="text" name="name" id="nameInput" class="form-control" placeholder="Full Name*" required>
-                    <label for="nameInput">Full Name</label>
+          <div class="col-lg-7">
+            <div class="glass-card h-100">
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact-form h-100 d-flex flex-column justify-content-center">
+                <input type="hidden" name="access_key" value="de1376d2-497a-4736-aac2-0e668daa6034">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control bg-transparent border-secondary text-white py-3 shadow-none" placeholder="Your Name" required>
                   </div>
-
-                  <div class="form-floating mb-3">
-                    <input type="email" name="email" id="emailInput" class="form-control" placeholder="Email Address*" required>
-                    <label for="emailInput">Email Address</label>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control bg-transparent border-secondary text-white py-3 shadow-none" name="email" placeholder="Your Email" required>
                   </div>
-
-                  <div class="form-floating mb-3">
-                    <input type="tel" name="phone" id="phoneInput" class="form-control" placeholder="Phone Number*" required>
-                    <label for="phoneInput">Phone Number</label>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control bg-transparent border-secondary text-white py-3 shadow-none" name="subject" placeholder="Subject" required>
                   </div>
-
-                  <div class="form-floating mb-3">
-                    <select name="subject" id="subjectInput" class="form-control" required>
-                      <option value="" disabled selected>Select a Service</option>
-                      <option value="Consulting">Web Development</option>
-                      <option value="Development">Mobile App Development</option>
-                      <option value="Development">Web App Development</option>
-                      <option value="Project Service">Project Service</option>
-                      <option value="Analysis">Data Analysis</option>
-                      <option value="Analysis">AI Integration</option>
-                    </select>
-                    <label for="subjectInput">Service</label>
+                  <div class="col-md-12">
+                    <textarea class="form-control bg-transparent border-secondary text-white py-3 shadow-none" name="message" rows="6" placeholder="Message" required></textarea>
                   </div>
-
-                  <div class="form-floating mb-3">
-                    <textarea name="message" id="messageInput" class="form-control" style="height:150px;" placeholder="Your Message" required></textarea>
-                    <label for="messageInput">Your Message</label>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow">Send Message</button>
                   </div>
-
-                  <div class="my-3">
-                    <div class="loading" style="display:none;">Sending...</div>
-                    <div class="error-message" style="display:none;">Message could not be sent.</div>
-                    <div class="sent-message" style="display:none;">Message sent successfully!</div>
-                  </div>
-
-                  <div class="d-grid">
-                    <button type="submit" class="btn-submit">
-                      Send Message <i class="bi bi-send-fill ms-2"></i>
-                    </button>
-                  </div>
-
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
-
-            <!-- End Contact Form -->
           </div>
         </div>
-
-      </section>
+      </div>
+    </section>
       <!-- /Contact Section -->
 
 
   </main>
 
-  <footer id="footer" class="footer light-background">
-  <div class="container">
-    <div class="row gy-4 align-items-start">
-
-      <!-- Brand Section -->
-      <div class="col-lg-4 col-md-12">
-        <div class="footer-brand">
-          <a href="index.html" class="d-flex align-items-center text-decoration-none mb-3">
-            <img src="assets/img/logo.png" alt="Xenotrix Technologies Logo" class="footer-logo me-2">
-            <h3 class="mb-0 footer-title">Xenotrix Technologies</h3>
+  <footer id="footer" class="footer mt-5 border-top border-secondary border-opacity-25">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+            <img src="assets/img/logo.png" alt="Xenotrix" class="footer-logo me-2" style="max-height: 40px;">
+            <span class="h4 fw-bold mb-0 text-white">Xenotrix</span>
           </a>
-          <p class="footer-text">
-            We build high-performance websites, mobile apps, and digital marketing solutions
-            that help businesses grow faster, rank better, and reach more customers online.
+          <p class="text-color small pe-lg-5">
+            Empowering businesses through innovative digital solutions. From web development to AI integration, we deliver excellence.
           </p>
-
-          <div class="social-links d-flex mt-3">
-            <a href="https://github.com/Xenotrix-Technologies" target="_blank" class="social-icon github">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/xenotrixtech" target="_blank" class="social-icon linkedin">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/xenotrix_" target="_blank" class="social-icon instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Links</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-color text-decoration-none hover-primary">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-color text-decoration-none hover-primary">About</a></li>
+            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none hover-primary">Services</a></li>
+            <li class="mb-2"><a href="portfolio.html" class="text-color text-decoration-none hover-primary">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Services</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none hover-primary">Web Development</a></li>
+            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none hover-primary">Digital Marketing</a></li>
+            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none hover-primary">SEO Services</a></li>
+            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none hover-primary">AI Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+          <p class="text-color small mb-3">Subscribe to get the latest updates and news.</p>
+          <div class="input-group">
+            <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
+            <button class="btn btn-primary px-3" type="button">Join</button>
           </div>
         </div>
       </div>
-
-      <!-- Contact Info -->
-      <div class="col-lg-2 col-md-6">
-        <div class="footer-box">
-          <h4>Location</h4>
-          <p>Thrissur, Kerala</p>
-          <p>India - 680594</p>
-        </div>
+      <div class="border-top border-secondary border-opacity-10 mt-5 pt-4 text-center">
+        <p class="text-color small mb-0">© 2026 Xenotrix Technologies. All rights reserved.</p>
       </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="footer-box">
-          <h4>Contact</h4>
-          <p><strong>Phone:</strong> +91 9995544316</p>
-          <p><strong>Email:</strong> xenotrixtech@gmail.com</p>
-        </div>
-      </div>
-
-      <!-- Working Hours -->
-      <div class="col-lg-3 col-md-12">
-        <div class="footer-box">
-          <h4>Working Hours</h4>
-          <p><strong>Mon - Sat:</strong> 10 AM - 8 PM</p>
-          <p><strong>Sunday:</strong> Closed</p>
-
-          <div class="footer-links mt-3">
-            <a href="policyprivacy.html">Privacy Policy</a><br>
-            <a href="contact.html">Contact Us</a><br>
-            <a href="service.html">Our Services</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-
-  <!-- Bottom Footer -->
-  <div class="container">
-    <div class="footer-bottom text-center mt-4 pt-3">
-      <p class="mb-1">
-        © 2026 <strong>Xenotrix Technologies</strong>. All Rights Reserved.
-      </p>
-      <p class="mb-0 small-text">
-        Designed & Developed by <a href="https://xenotrix.in" target="_blank">Xenotrix Technologies</a>
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

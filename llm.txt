@@ -1,0 +1,28 @@
+# Xenotrix Technologies
+
+> Xenotrix Technologies is a leading global provider of website development, mobile app development, SEO, and digital marketing services. We help businesses increase online visibility and boost sales with high-performance strategies.
+
+## About Us
+Xenotrix Technologies specializes in building innovative products and digital ecosystems that merge design, data, and AI to accelerate growth. We provide smart development solutions and bring intelligence to your workflows for maximum efficiency.
+
+## Services
+- **Web Development:** SEO-optimized websites and mobile apps that deliver speed, performance, and high conversion rates.
+- **Digital Marketing:** Expert SEO, social media, and paid ads strategies that increase traffic, leads, and sales.
+- **Data Analytics:** Data-driven insights, dashboards, and analytics solutions tailored to your business goals.
+- **Custom Software:** Scalable and secure custom software tailored to your specific business needs.
+- **AI Solutions & Automation:** Bringing intelligence to your workflows for maximum efficiency.
+
+## Products
+- **Xenotune:** An AI-powered app that generates soundscapes to enhance focus, relaxation, and sleep by optimizing your mental state. Available at https://xenotune.xenotrix.in
+
+## Contact Information
+- **Location:** Thrissur, Kerala, India - 680594
+- **Email:** xenotrixtech@gmail.com
+- **Phone / WhatsApp:** +91 9995544316
+- **Website:** https://xenotrix.in
+
+## Links
+- [About Us](https://xenotrix.in/about.html)
+- [Services](https://xenotrix.in/service.html)
+- [Portfolio](https://xenotrix.in/portfolio.html)
+- [Contact](https://xenotrix.in/contact.html)

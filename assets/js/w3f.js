@@ -1,24 +1,50 @@
-document.getElementById("contact-form").addEventListener("submit", async (e) => {
+const contactForms = document.querySelectorAll(".contact-form");
+
+contactForms.forEach(form => {
+    form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const form = e.target;
-
-        // Show loading
-        form.querySelector(".loading").style.display = "block";
-        form.querySelector(".error-message").style.display = "none";
-        form.querySelector(".sent-message").style.display = "none";
-
-        const response = await fetch(form.action, {
-            method: "POST",
-            body: new FormData(form)
+        
+        // Show loading via SweetAlert
+        Swal.fire({
+            title: 'Sending...',
+            text: 'Please wait while your message is sent.',
+            allowOutsideClick: false,
+            didOpen: () => {
+                Swal.showLoading();
+            }
         });
 
-        const result = await response.json();
-        form.querySelector(".loading").style.display = "none";
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: new FormData(form)
+            });
 
-        if (result.success) {
-            form.querySelector(".sent-message").style.display = "block";
-            form.reset();
-        } else {
-            form.querySelector(".error-message").style.display = "block";
+            const result = await response.json();
+
+            if (result.success) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message Sent!',
+                    text: 'Thank you for contacting us. We will get back to you shortly.',
+                    confirmButtonColor: '#38bdf8'
+                });
+                form.reset();
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong. Please try again later.',
+                    confirmButtonColor: '#38bdf8'
+                });
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Network Error',
+                text: 'Please check your connection and try again.',
+                confirmButtonColor: '#38bdf8'
+            });
         }
     });
+});

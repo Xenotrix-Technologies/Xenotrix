@@ -9,6 +9,8 @@ Allow: /
 # Disallow unnecessary or private files
 Disallow: /LICENSE
 Disallow: /README.md
+Disallow: /llm.txt
+Disallow: /*.md$
 
 # Sitemap location
 Sitemap: https://xenotrix.in/sitemap.xml

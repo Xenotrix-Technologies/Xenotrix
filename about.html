@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About Us | Xenotrix Technologies</title>
-  <meta name="description" content="Learn about Xenotrix Technologies, a leader in AI-driven digital solutions, web development, and professional marketing strategies.">
-  <meta name="keywords" content="about xenotrix, digital solutions company, AI automation agency">
+  <title>About Xenotrix Technologies | AI-Driven Software Innovation Company</title>
+  <meta name="description" content="Learn about Xenotrix Technologies — a next-generation AI and software innovation company delivering enterprise-grade digital transformation solutions from Thrissur, Kerala, India.">
+  <meta name="keywords" content="about Xenotrix Technologies, AI software company India, enterprise tech company Kerala, digital transformation company">
+  <link rel="canonical" href="https://xenotrix.in/about.html">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -16,7 +17,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -33,15 +34,30 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt="Xenotrix Logo">
+        <img src="assets/img/logo.png" alt="Xenotrix Technologies Logo">
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
-          <li><a href="service.html">Services</a></li>
+          <li class="dropdown"><a href="service.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="services/web-development.html">Web Development</a></li>
+              <li><a href="services/app-development.html">Mobile App Development</a></li>
+              <li><a href="services/ai-solutions.html">AI Solutions & Integration</a></li>
+              <li><a href="services/data-analytics.html">Data Analytics & BI</a></li>
+              <li><a href="services/ui-ux-design.html">UI/UX Design</a></li>
+              <li><a href="services/backend-development.html">Backend Development</a></li>
+              <li><a href="services/automation.html">Automation Solutions</a></li>
+              <li><a href="services/project-center.html">Project Center</a></li>
+              <li><a href="services/saas-development.html">SaaS Development</a></li>
+              <li><a href="services/digital-marketing.html">Digital Marketing & SEO</a></li>
+            </ul>
+          </li>
           <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="industries.html">Industries</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://xenotune.xenotrix.in" target="_blank">Xenotune</a></li>
         </ul>
       </nav>
       <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
@@ -58,32 +74,26 @@
     <!-- Page Title -->
     <div class="page-title py-5 mt-5">
       <div class="container d-lg-flex justify-content-between align-items-center pt-5">
-        <h1 class="display-4 fw-bold">About Us</h1>
+        <h1 class="display-4 fw-bold">About Xenotrix Technologies</h1>
         <nav class="breadcrumbs">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active text-primary">About</li>
+            <li class="breadcrumb-item active text-primary">About Us</li>
           </ol>
         </nav>
       </div>
     </div>
 
-    <!-- About Section -->
+    <!-- Who We Are Section -->
     <section id="about" class="about section">
       <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <span>Who We Are</span>
-          <h2>Premium Web & Marketing Partner</h2>
-          <p>Founded in 2025, Xenotrix Technologies is a forward-thinking digital solutions company dedicated to helping businesses succeed in the modern era.</p>
-        </div>
-
         <div class="row align-items-center gy-5">
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
             <div class="position-relative overflow-hidden rounded-4 shadow-lg">
-              <img src="assets/img/about/about-square-15.webp" class="img-fluid w-100" alt="Xenotrix Team" />
+              <img src="assets/img/about/about-square-15.webp" class="img-fluid w-100" alt="Xenotrix Technologies Team at Work" />
               <div class="experience-box position-absolute bottom-0 end-0 m-4 glass-card p-4 text-center">
                 <div class="years h2 fw-bold text-primary mb-0" id="expMonths">0+</div>
-                <div class="text small fw-semibold">Months of<br />Innovation</div>
+                <div class="text small fw-semibold">Months of<br>Innovation</div>
               </div>
               <script>
                 function calculateMonths(startDate) {
@@ -91,83 +101,277 @@
                   const now = new Date();
                   return Math.max(0, (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth()));
                 }
-                const startDate = new Date(2025, 3, 7);
-                document.getElementById("expMonths").textContent = calculateMonths(startDate) + "+";
+                const xenoStart = new Date(2025, 3, 7);
+                document.getElementById("expMonths").textContent = calculateMonths(xenoStart) + "+";
               </script>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <div class="ps-lg-5">
-              <h2 class="display-6 fw-bold mb-4">Transforming Ideas Into <span class="text-primary">Intelligent</span> Experiences</h2>
-              <p class="lead mb-5">At Xenotrix Technologies, we build innovative products and digital ecosystems that merge design, AI, and data.</p>
-              
-              <div class="features-list">
-                <div class="feature-item d-flex mb-4" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="icon-box me-3">
-                    <i class="bi bi-check-circle-fill text-primary fs-4"></i>
-                  </div>
-                  <div>
-                    <h4 class="h5 fw-bold mb-1">Smart Development</h4>
-                    <p class="small text-color mb-0">Dynamic websites and intuitive mobile apps ensuring exceptional performance.</p>
-                  </div>
-                </div>
-                <div class="feature-item d-flex mb-4" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="icon-box me-3">
-                    <i class="bi bi-check-circle-fill text-primary fs-4"></i>
-                  </div>
-                  <div>
-                    <h4 class="h5 fw-bold mb-1">AI & Automation</h4>
-                    <p class="small text-color mb-0">Optimizing workflows and integrating AI-driven analytics for better decisions.</p>
+              <span class="text-primary fw-semibold text-uppercase small letter-spacing-2">Who We Are</span>
+              <h2 class="display-6 fw-bold my-3">Xenotrix Technologies — Engineering the <span class="text-primary">Future of Business</span></h2>
+              <p class="lead mb-4">
+                Founded in 2025 and headquartered in Thrissur, Kerala, Xenotrix Technologies is a next-generation AI and software engineering company. We don't just build technology — we architect competitive advantage.
+              </p>
+              <p class="text-color mb-4">
+                Our founding team brings together seasoned engineers, AI researchers, product designers, and business strategists — united by a singular mission: to deliver enterprise-grade technology solutions that generate real, measurable business impact for every client we serve.
+              </p>
+              <p class="text-color mb-5">
+                From AI-powered web platforms to intelligent mobile applications, data-driven business intelligence, and full-scale automation — Xenotrix operates at the intersection of technical excellence and business strategy. We are equally comfortable building an MVP for a funded startup and designing mission-critical infrastructure for an established enterprise.
+              </p>
+
+              <div class="row g-3 mb-5">
+                <div class="col-6">
+                  <div class="glass-card text-center py-3">
+                    <div class="h4 fw-bold text-primary mb-1">50+</div>
+                    <div class="small text-color">Projects Delivered</div>
                   </div>
                 </div>
-                <div class="feature-item d-flex mb-4" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="icon-box me-3">
-                    <i class="bi bi-check-circle-fill text-primary fs-4"></i>
+                <div class="col-6">
+                  <div class="glass-card text-center py-3">
+                    <div class="h4 fw-bold text-primary mb-1">9</div>
+                    <div class="small text-color">Core Service Lines</div>
                   </div>
-                  <div>
-                    <h4 class="h5 fw-bold mb-1">Digital Growth</h4>
-                    <p class="small text-color mb-0">Data-driven strategies and SEO optimization to amplify your market reach.</p>
+                </div>
+                <div class="col-6">
+                  <div class="glass-card text-center py-3">
+                    <div class="h4 fw-bold text-primary mb-1">100%</div>
+                    <div class="small text-color">Client Satisfaction Rate</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="glass-card text-center py-3">
+                    <div class="h4 fw-bold text-primary mb-1">AI-First</div>
+                    <div class="small text-color">Development Philosophy</div>
                   </div>
                 </div>
               </div>
 
-              <div class="cta-buttons mt-5 d-flex gap-3">
+              <div class="cta-buttons d-flex gap-3">
                 <a href="service.html" class="btn btn-primary rounded-pill px-4 py-2">Our Services</a>
-                <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4 py-2">Get Started</a>
+                <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4 py-2">Get a Consultation</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Milestones -->
-        <div class="row g-4 mt-5 pt-5">
+
+    <!-- Mission, Vision, Values -->
+    <section class="section" style="background: rgba(10, 10, 25, 0.6);">
+      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+          <span>Our Foundation</span>
+          <h2>Mission, Vision & Core Values</h2>
+          <p>The principles that guide every decision, every line of code, and every client relationship at Xenotrix.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card h-100" style="border-left: 3px solid #6366f1;">
+              <div class="mb-4">
+                <i class="bi bi-compass fs-2 text-primary"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Our Mission</h4>
+              <p class="text-color">
+                To engineer enterprise-grade, AI-driven technology solutions that accelerate business growth, eliminate operational inefficiency, and create sustainable competitive advantage for every organization we serve — regardless of their size or stage.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass-card h-100" style="border-left: 3px solid #8b5cf6;">
+              <div class="mb-4">
+                <i class="bi bi-eye fs-2 text-primary"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Our Vision</h4>
+              <p class="text-color">
+                To be India's most trusted AI-powered digital transformation partner — recognized globally for the precision of our engineering, the depth of our business impact, and our relentless commitment to building technology that truly serves humanity's future.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="glass-card h-100" style="border-left: 3px solid #06b6d4;">
+              <div class="mb-4">
+                <i class="bi bi-heart-pulse fs-2 text-primary"></i>
+              </div>
+              <h4 class="fw-bold mb-3">Our Core Values</h4>
+              <ul class="list-unstyled text-color">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong class="text-white">Technical Excellence</strong> — We refuse to compromise on quality</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong class="text-white">Client Obsession</strong> — Your success is our only KPI</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong class="text-white">Radical Transparency</strong> — Clear communication, always</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong class="text-white">Innovation First</strong> — We build what doesn't exist yet</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong class="text-white">Scalable Thinking</strong> — Designed for tomorrow, delivered today</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- What Sets Us Apart -->
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Our Approach</span>
+        <h2>What Makes Xenotrix Different</h2>
+        <p>We operate with a fundamentally different philosophy than traditional IT companies — one built on AI-first thinking, business outcomes, and long-term partnership.</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="ps-0 pe-lg-5">
+              <div class="d-flex mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex-shrink-0 me-4">
+                  <div class="bg-primary bg-opacity-10 rounded-3 p-3" style="border: 1px solid rgba(99,102,241,0.3);">
+                    <i class="bi bi-cpu fs-3 text-primary"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2">AI-First Development Philosophy</h5>
+                  <p class="text-color mb-0">Every solution we architect — from a simple business website to a complex enterprise system — is designed with AI augmentation in mind. We don't bolt on intelligence; we build it in from day one.</p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex-shrink-0 me-4">
+                  <div class="bg-primary bg-opacity-10 rounded-3 p-3" style="border: 1px solid rgba(99,102,241,0.3);">
+                    <i class="bi bi-graph-up-arrow fs-3 text-primary"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2">Business Outcomes Over Deliverables</h5>
+                  <p class="text-color mb-0">We don't measure success by features shipped or code written. We measure it by your conversion rates, cost savings, revenue growth, and operational efficiency. Your KPIs are our KPIs.</p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex-shrink-0 me-4">
+                  <div class="bg-primary bg-opacity-10 rounded-3 p-3" style="border: 1px solid rgba(99,102,241,0.3);">
+                    <i class="bi bi-shield-check fs-3 text-primary"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2">Security & Scalability by Design</h5>
+                  <p class="text-color mb-0">Security is never an afterthought. Every system we build follows OWASP standards, implements end-to-end encryption, and is architected to scale seamlessly from day one to enterprise level.</p>
+                </div>
+              </div>
+
+              <div class="d-flex" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex-shrink-0 me-4">
+                  <div class="bg-primary bg-opacity-10 rounded-3 p-3" style="border: 1px solid rgba(99,102,241,0.3);">
+                    <i class="bi bi-people fs-3 text-primary"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2">Long-Term Technology Partnership</h5>
+                  <p class="text-color mb-0">We don't disappear after delivery. Xenotrix provides ongoing support, performance monitoring, feature evolution, and strategic technology consulting as your business grows and evolves.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="glass-card p-5">
+              <h4 class="fw-bold mb-4">Our Technology Stack</h4>
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="small fw-bold text-primary mb-2">Frontend & Web</div>
+                  <p class="small text-color mb-0">React.js, Next.js, HTML5, CSS3, Tailwind, Bootstrap</p>
+                </div>
+                <div class="col-12"><hr class="border-secondary border-opacity-25 my-0"></div>
+                <div class="col-12">
+                  <div class="small fw-bold text-primary mb-2">Mobile Development</div>
+                  <p class="small text-color mb-0">Flutter, Dart — iOS & Android cross-platform</p>
+                </div>
+                <div class="col-12"><hr class="border-secondary border-opacity-25 my-0"></div>
+                <div class="col-12">
+                  <div class="small fw-bold text-primary mb-2">Backend & APIs</div>
+                  <p class="small text-color mb-0">Python, FastAPI, Django REST Framework, Node.js, PostgreSQL, Redis, MongoDB</p>
+                </div>
+                <div class="col-12"><hr class="border-secondary border-opacity-25 my-0"></div>
+                <div class="col-12">
+                  <div class="small fw-bold text-primary mb-2">AI & Machine Learning</div>
+                  <p class="small text-color mb-0">Python, TensorFlow, PyTorch, OpenAI API, LangChain, Hugging Face, Scikit-learn</p>
+                </div>
+                <div class="col-12"><hr class="border-secondary border-opacity-25 my-0"></div>
+                <div class="col-12">
+                  <div class="small fw-bold text-primary mb-2">Data Engineering & BI</div>
+                  <p class="small text-color mb-0">Apache Spark, dbt, Pandas, Power BI, Tableau, Google Data Studio</p>
+                </div>
+                <div class="col-12"><hr class="border-secondary border-opacity-25 my-0"></div>
+                <div class="col-12">
+                  <div class="small fw-bold text-primary mb-2">Cloud & DevOps</div>
+                  <p class="small text-color mb-0">AWS, GCP, Azure, Docker, Kubernetes, CI/CD pipelines, GitHub Actions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Milestones -->
+    <section class="section" style="background: rgba(10, 10, 25, 0.6);">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Our Journey</span>
+        <h2>Milestones & Growth</h2>
+      </div>
+      <div class="container">
+        <div class="row g-4">
           <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="glass-card text-center py-5 h-100">
-              <h3 class="display-5 fw-bold text-primary mb-2">10+</h3>
-              <p class="small text-color mb-0">Projects Delivered</p>
+              <h3 class="display-5 fw-bold text-primary mb-2">April 2025</h3>
+              <p class="small text-color mb-0">Company Founded</p>
             </div>
           </div>
           <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="glass-card text-center py-5 h-100">
-              <h3 class="display-5 fw-bold text-primary mb-2">5+</h3>
-              <p class="small text-color mb-0">Global Clients</p>
+              <h3 class="display-5 fw-bold text-primary mb-2">9</h3>
+              <p class="small text-color mb-0">Enterprise Service Lines</p>
             </div>
           </div>
           <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="glass-card text-center py-5 h-100">
-              <h3 class="display-5 fw-bold text-primary mb-2">10+</h3>
-              <p class="small text-color mb-0">AI Solutions</p>
+              <h3 class="display-5 fw-bold text-primary mb-2" id="milestoneMonths">0+</h3>
+              <p class="small text-color mb-0">Months of Innovation</p>
+              <script>
+                const ms2 = new Date(2025, 3, 7);
+                document.getElementById("milestoneMonths").textContent = Math.max(0,(new Date().getFullYear()-ms2.getFullYear())*12+(new Date().getMonth()-ms2.getMonth())) + "+";
+              </script>
             </div>
           </div>
           <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="glass-card text-center py-5 h-100">
-              <h3 class="display-5 fw-bold text-primary mb-2" id="milestoneMonths">0+</h3>
-              <p class="small text-color mb-0">Innovation Months</p>
-              <script>
-                document.getElementById("milestoneMonths").textContent = calculateMonths(startDate) + "+";
-              </script>
+              <h3 class="display-5 fw-bold text-primary mb-2">1</h3>
+              <p class="small text-color mb-0">Flagship SaaS Product (Xenotune)</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="glass-card p-5 text-center" style="background: linear-gradient(135deg, rgba(99,102,241,0.15) 0%, rgba(139,92,246,0.1) 100%); border: 1px solid rgba(99,102,241,0.3);" data-aos="fade-up">
+          <h2 class="display-6 fw-bold mb-4">Ready to Build Something Extraordinary?</h2>
+          <p class="lead text-color mb-5 mx-auto" style="max-width: 600px;">
+            Join the businesses that have trusted Xenotrix Technologies to transform their operations with enterprise-grade AI and software solutions.
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="contact.html" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold">
+              <i class="bi bi-calendar-check me-2"></i>Schedule a Free Consultation
+            </a>
+            <a href="portfolio.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">
+              View Our Work <i class="bi bi-arrow-right ms-2"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -184,38 +388,44 @@
             <span class="h4 fw-bold mb-0 text-white">Xenotrix</span>
           </a>
           <p class="text-color small pe-lg-5">
-            Empowering businesses through innovative digital solutions. From web development to AI integration, we deliver excellence.
+            Enterprise-grade AI and software solutions that drive measurable digital transformation. Building the technology systems that power tomorrow's businesses.
           </p>
         </div>
         <div class="col-lg-2 col-md-6">
-          <h5 class="fw-bold mb-3 text-white">Links</h5>
+          <h5 class="fw-bold mb-3 text-white">Company</h5>
           <ul class="list-unstyled small">
             <li class="mb-2"><a href="index.html" class="text-color text-decoration-none">Home</a></li>
-            <li class="mb-2"><a href="about.html" class="text-color text-decoration-none">About</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">Services</a></li>
+            <li class="mb-2"><a href="about.html" class="text-color text-decoration-none">About Us</a></li>
             <li class="mb-2"><a href="portfolio.html" class="text-color text-decoration-none">Portfolio</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-color text-decoration-none">Contact</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-3 text-white">Services</h5>
           <ul class="list-unstyled small">
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">Web Development</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">Digital Marketing</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">SEO Services</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">AI Solutions</a></li>
+            <li class="mb-2"><a href="services/web-development.html" class="text-color text-decoration-none">Web Development</a></li>
+            <li class="mb-2"><a href="services/app-development.html" class="text-color text-decoration-none">Mobile App Development</a></li>
+            <li class="mb-2"><a href="services/ai-solutions.html" class="text-color text-decoration-none">AI Solutions</a></li>
+            <li class="mb-2"><a href="services/data-analytics.html" class="text-color text-decoration-none">Data Analytics & BI</a></li>
+            <li class="mb-2"><a href="services/automation.html" class="text-color text-decoration-none">Automation Solutions</a></li>
+            <li class="mb-2"><a href="services/saas-development.html" class="text-color text-decoration-none">SaaS Development</a></li>
+            <li class="mb-2"><a href="services/digital-marketing.html" class="text-color text-decoration-none">Digital Marketing & SEO</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
-          <p class="text-color small mb-3">Subscribe to get the latest updates and news.</p>
-          <div class="input-group">
-            <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
-            <button class="btn btn-primary px-3" type="button">Join</button>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Contact</h5>
+          <p class="text-color small mb-1"><i class="bi bi-geo-alt me-2 text-primary"></i>Thrissur, Kerala, India</p>
+          <p class="text-color small mb-1"><i class="bi bi-envelope me-2 text-primary"></i>xenotrixtech@gmail.com</p>
+          <p class="text-color small mb-3"><i class="bi bi-telephone me-2 text-primary"></i>+91 9995544316</p>
+          <div class="d-flex gap-3">
+            <a href="https://github.com/Xenotrix-Technologies" target="_blank" class="text-color text-decoration-none"><i class="bi bi-github fs-5"></i></a>
+            <a href="https://www.linkedin.com/company/xenotrixtech/" target="_blank" class="text-color text-decoration-none"><i class="bi bi-linkedin fs-5"></i></a>
+            <a href="https://www.instagram.com/xenotrix_" target="_blank" class="text-color text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
           </div>
         </div>
       </div>
       <div class="border-top border-secondary border-opacity-10 mt-5 pt-4 text-center">
-        <p class="text-color small mb-0">2026 Xenotrix Technologies. All rights reserved.</p>
+        <p class="text-color small mb-0">&copy; 2026 Xenotrix Technologies. All rights reserved.</p>
       </div>
     </div>
   </footer>

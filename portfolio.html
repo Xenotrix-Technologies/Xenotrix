@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Our Portfolio | Xenotrix Technologies</title>
-  <meta name="description" content="Explore Xenotune and other innovative products built by Xenotrix Technologies.">
-  <meta name="keywords" content="Xenotune, AI Music Generator, FastAPI, Flutter, Xenotrix Technologies Portfolio">
+  <meta name="description" content="Explore Xenotrix Technologies' portfolio: Enterprise-grade SaaS systems and products including XenoCRM, XenoFin, and XenoHR.">
+  <meta name="keywords" content="XenoCRM, XenoFin, XenoHR, SaaS products, financial management software, B2B CRM, enterprise HR portal, Xenotrix portfolio">
+  <link rel="canonical" href="https://xenotrix.in/portfolio.html">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -39,9 +39,24 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Services</a></li>
+          <li class="dropdown"><a href="service.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="services/web-development.html">Web Development</a></li>
+              <li><a href="services/app-development.html">Mobile App Development</a></li>
+              <li><a href="services/ai-solutions.html">AI Solutions & Integration</a></li>
+              <li><a href="services/data-analytics.html">Data Analytics & BI</a></li>
+              <li><a href="services/ui-ux-design.html">UI/UX Design</a></li>
+              <li><a href="services/backend-development.html">Backend Development</a></li>
+              <li><a href="services/automation.html">Automation Solutions</a></li>
+              <li><a href="services/project-center.html">Project Center</a></li>
+              <li><a href="services/saas-development.html">SaaS Development</a></li>
+              <li><a href="services/digital-marketing.html">Digital Marketing & SEO</a></li>
+            </ul>
+          </li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="industries.html">Industries</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://xenotune.xenotrix.in" target="_blank">Xenotune</a></li>
         </ul>
       </nav>
       <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
@@ -58,7 +73,7 @@
     <!-- Page Title -->
     <div class="page-title py-5 mt-5">
       <div class="container d-lg-flex justify-content-between align-items-center pt-5">
-        <h1 class="display-4 fw-bold">Portfolio</h1>
+        <h1 class="display-4 fw-bold">Our Products & Portfolio</h1>
         <nav class="breadcrumbs">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -72,10 +87,57 @@
     <section id="portfolio-details" class="portfolio-details section">
       <div class="container" data-aos="fade-up">
         
-        <!-- Project 1: Xenotune -->
-        <div class="row gy-5 mb-5 pb-5">
+        <!-- Project 1: XenoCRM -->
+        <div class="row gy-5 mb-5 pb-5 align-items-center">
           <div class="col-lg-7">
-            <div class="glass-card p-2 rounded-4 overflow-hidden">
+            <div class="glass-card p-2 rounded-4 overflow-hidden shadow-lg" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
+              <img src="assets/img/portfolio/XenoCRM/Screenshot 2026-02-23 100844.png" class="img-fluid rounded-3 w-100" alt="XenoCRM Dashboard">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="ps-lg-4">
+              <span class="text-primary fw-bold small text-uppercase tracking-wider">Flagship CRM Product</span>
+              <h2 class="display-5 fw-bold mb-4">XenoCRM</h2>
+              <p class="text-color mb-4">
+                A high-performance, enterprise-grade Client Relationship Management system. XenoCRM unifies sales pipelines, client logs, automated follow-ups, contract management, and visual analytics dashboards into a single responsive operational center.
+              </p>
+              <div class="glass-card mb-4 p-4">
+                <ul class="list-unstyled mb-0 small">
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Category:</strong> <span class="text-color">Enterprise CRM System</span></li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Tech Stack:</strong> <span class="text-color">React JS, FastAPI, MySQL, Redis</span></li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Target Audience:</strong> <span class="text-color">B2B sales teams, managers, client support</span></li>
+                  <li class="d-flex justify-content-between pb-2"><strong>Demo Access:</strong> <span class="text-primary">Private Enterprise Demo</span></li>
+                </ul>
+              </div>
+              <p class="small text-color italic">Powered by React JS on the frontend and FastAPI on the backend, XenoCRM ensures sub-100ms transitions and robust data integrity for growing sales forces.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary border-opacity-10 mb-5">
+
+        <!-- Project 2: XenoFin -->
+        <div class="row gy-5 mb-5 pb-5 align-items-center reverse-lg">
+          <div class="col-lg-5">
+            <div class="pe-lg-4">
+              <span class="text-primary fw-bold small text-uppercase tracking-wider">Financial Operations System</span>
+              <h2 class="display-5 fw-bold mb-4">XenoFin</h2>
+              <p class="text-color mb-4">
+                A comprehensive finance management and cash flow ledger. XenoFin streamlines invoice tracking, revenue reconciliation, business expenses, automated partner payout calculations, and tax report compliance in a secure environment.
+              </p>
+              <div class="glass-card mb-4 p-4">
+                <ul class="list-unstyled mb-0 small">
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Category:</strong> <span class="text-color">Financial Management Software</span></li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Tech Stack:</strong> <span class="text-color">Django, Python, PostgreSQL, ChartJS</span></li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Key Features:</strong> <span class="text-color">Partner payouts, automated invoicing, cash flow forecasting</span></li>
+                  <li class="d-flex justify-content-between pb-2"><strong>Project URL:</strong> <a href="https://xenofin.xenotrix.in" target="_blank" class="text-primary text-decoration-none fw-bold">Visit XenoFin Website</a></li>
+                </ul>
+              </div>
+              <p class="small text-color italic">Built on a secure Django framework with a highly optimized PostgreSQL transaction log, XenoFin helps businesses mitigate errors and track margins in real time.</p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="glass-card p-2 rounded-4 overflow-hidden shadow-lg" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
               <div class="swiper init-swiper portfolio-details-slider">
                 <script type="application/json" class="swiper-config">
                   {
@@ -87,145 +149,47 @@
                   }
                 </script>
                 <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide"><img src="assets/img/portfolio/xenotune/xenotune.png" class="img-fluid rounded-3" alt="Xenotune"></div>
-                  <div class="swiper-slide"><img src="assets/img/portfolio/xenotune/fg.jpg" class="img-fluid rounded-3" alt="AI Music"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/xenofin.png" class="img-fluid rounded-3" alt="XenoFin interface"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/xenofin1.png" class="img-fluid rounded-3" alt="XenoFin report center"></div>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="ps-lg-4">
-              <span class="text-primary fw-bold small text-uppercase tracking-wider">Product Design</span>
-              <h2 class="display-5 fw-bold mb-4">Xenotune</h2>
-              <p class="text-color mb-4">
-                AI-powered music generation system that creates infinite, mood-based soundscapes using deep learning.
-              </p>
-              <div class="glass-card mb-4">
-                <ul class="list-unstyled mb-0 small">
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Category:</strong> <span class="text-color">AI Music Generation</span></li>
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Tech:</strong> <span class="text-color">FastAPI, Flutter, Python</span></li>
-                  <li class="d-flex justify-content-between pb-2"><strong>Project URL:</strong> <a href="https://xenotune.xenotrix.in" target="_blank" class="text-primary text-decoration-none">Visit Website</a></li>
-                </ul>
-              </div>
-              <p class="small text-color italic">Built with FastAPI as backend and Flutter as frontend, Xenotune blends advanced AI models with real-time audio synthesis.</p>
             </div>
           </div>
         </div>
 
         <hr class="border-secondary border-opacity-10 mb-5">
 
-        <!-- Project 2: XenoCRM -->
-        <div class="row gy-5 reverse-lg">
-          <div class="col-lg-5">
-            <div class="pe-lg-4">
-              <span class="text-primary fw-bold small text-uppercase tracking-wider">Enterprise Solution</span>
-              <h2 class="display-5 fw-bold mb-4">XenoCRM</h2>
-              <p class="text-color mb-4">
-                Smart Business Management platform built to simplify and accelerate business operations.
-              </p>
-              <div class="glass-card mb-4">
-                <ul class="list-unstyled mb-0 small">
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Category:</strong> <span class="text-color">CRM Platform</span></li>
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Tech:</strong> <span class="text-color">React JS, FastAPI, MySQL</span></li>
-                  <li class="d-flex justify-content-between pb-2"><strong>Project URL:</strong> <a href="#" class="text-primary text-decoration-none">Private Demo</a></li>
-                </ul>
-              </div>
-              <p class="small text-color italic">Powered by React JS on the frontend, XenoCRM delivers a high-performance, secure, and scalable digital experience for teams.</p>
-            </div>
-          </div>
+        <!-- Project 3: XenoHR (Upcoming) -->
+        <div class="row gy-5 mb-5 pb-5 align-items-center">
           <div class="col-lg-7">
-            <div class="glass-card p-2 rounded-4 overflow-hidden">
-              <img src="assets/img/portfolio/XenoCRM/Screenshot 2026-02-23 100844.png" class="img-fluid rounded-3 w-100" alt="XenoCRM">
-            </div>
-          </div>
-        </div>
-
-        <div class="row gy-5 mb-5 pb-5">
-          <div class="col-lg-7">
-            <div class="glass-card p-2 rounded-4 overflow-hidden">
-              <div class="swiper init-swiper portfolio-details-slider">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": { "delay": 5000 },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    }
-                  }
-                </script>
-
-                <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/xenofin.png"
-                        class="img-fluid rounded-3"
-                        alt="Xenofin Finance Manager">
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/xenofin1.png"
-                        class="img-fluid rounded-3"
-                        alt="Finance Reports">
-                  </div>
+            <div class="glass-card p-5 rounded-4 shadow-lg text-center" style="background: linear-gradient(135deg, rgba(99,102,241,0.05) 0%, rgba(139,92,246,0.03) 100%); border: 1px dashed rgba(99,102,241,0.3);">
+              <div class="py-5">
+                <div class="mb-4" style="width: 80px; height: 80px; background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); border-radius: 20px; display: inline-flex; align-items: center; justify-content: center; margin: 0 auto;">
+                  <i class="bi bi-people-fill fs-1 text-primary"></i>
                 </div>
-
-                <div class="swiper-pagination"></div>
+                <h3 class="fw-bold mt-3 text-white">XenoHR Dashboard Preview</h3>
+                <p class="small text-color mx-auto" style="max-width: 400px;">Development In Progress — Launching Q3 2026. Private preview screenshots available for enterprise partners on request.</p>
+                <span class="badge rounded-pill px-3 py-2 bg-primary mt-2"><i class="bi bi-lock me-2"></i>Upcoming Product</span>
               </div>
             </div>
           </div>
-
           <div class="col-lg-5">
             <div class="ps-lg-4">
-              <span class="text-primary fw-bold small text-uppercase tracking-wider">
-                Financial Management System
-              </span>
-
-              <h2 class="display-5 fw-bold mb-4">Xenofin</h2>
-
+              <span class="text-primary fw-bold small text-uppercase tracking-wider">Human Resource Ecosystem</span>
+              <h2 class="display-5 fw-bold mb-4">XenoHR <span class="fs-6 text-white-50">(Upcoming)</span></h2>
               <p class="text-color mb-4">
-                A comprehensive finance management platform designed to streamline
-                business operations through client management, income and expense
-                tracking, partner payout calculations, and detailed financial reporting.
+                Our upcoming next-generation Human Resource & Payroll Management platform. XenoHR is designed to automate shift scheduling, biometric/geo-fenced attendance tracking, dynamic tax deductions, payroll execution, and employee self-service dashboards.
               </p>
-
-              <div class="glass-card mb-4">
+              <div class="glass-card mb-4 p-4">
                 <ul class="list-unstyled mb-0 small">
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2">
-                    <strong>Category:</strong>
-                    <span class="text-color">Finance Management Software</span>
-                  </li>
-
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2">
-                    <strong>Tech:</strong>
-                    <span class="text-color">Django, Frontend tools, PostgreSQL, Python</span>
-                  </li>
-
-                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2">
-                    <strong>Features:</strong>
-                    <span class="text-color">Clients, Income, Expenses, Reports</span>
-                  </li>
-
-                  <li class="d-flex justify-content-between pb-2">
-                    <strong>Project URL:</strong>
-                    <a href="https://xenofin.xenotrix.in"
-                      target="_blank"
-                      class="text-primary text-decoration-none">
-                      Visit Website
-                    </a>
-                  </li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Category:</strong> <span class="text-color">HR & Payroll Suite</span></li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Tech Stack:</strong> <span class="text-color">Next.js, Python, PostgreSQL, Docker</span></li>
+                  <li class="mb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-10 pb-2"><strong>Features:</strong> <span class="text-color">Biometric API Sync, Leave Approvals, Payslip Generators</span></li>
+                  <li class="d-flex justify-content-between pb-2"><strong>Availability:</strong> <span class="text-color">Q3 2026 Roadmap</span></li>
                 </ul>
               </div>
-
-              <p class="small text-color italic">
-                Xenofin enables businesses to efficiently manage clients, track income
-                and expenses, automate partner payout calculations, generate detailed
-                financial reports, monitor cash flow, and gain actionable insights for
-                better financial decision-making.
-              </p>
+              <p class="small text-color italic">XenoHR provides complete administrative control for HR teams while giving employees a premium interface to track leaves, benefits, and payslips.</p>
             </div>
           </div>
         </div>
@@ -240,65 +204,57 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6">
           <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
-            <img src="assets/img/logo.png" alt="Xenotrix" class="footer-logo me-2" style="max-height: 40px;">
+            <img src="assets/img/logo.png" alt="Xenotrix Logo" class="footer-logo me-2" style="max-height: 40px;">
             <span class="h4 fw-bold mb-0 text-white">Xenotrix</span>
           </a>
-          <p class="text-color small pe-lg-5">
-            Empowering businesses through innovative digital solutions. From web development to AI integration, we deliver excellence.
-          </p>
+          <p class="text-color small pe-lg-5">Enterprise-grade AI and software solutions that drive measurable digital transformation.</p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h5 class="fw-bold mb-3 text-white">Links</h5>
           <ul class="list-unstyled small">
             <li class="mb-2"><a href="index.html" class="text-color text-decoration-none">Home</a></li>
-            <li class="mb-2"><a href="about.html" class="text-color text-decoration-none">About</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">Services</a></li>
+            <li class="mb-2"><a href="about.html" class="text-color text-decoration-none">About Us</a></li>
             <li class="mb-2"><a href="portfolio.html" class="text-color text-decoration-none">Portfolio</a></li>
+            <li class="mb-2"><a href="industries.html" class="text-color text-decoration-none">Industries</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-color text-decoration-none">Contact</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-3 text-white">Services</h5>
           <ul class="list-unstyled small">
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">Web Development</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">Digital Marketing</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">SEO Services</a></li>
-            <li class="mb-2"><a href="service.html" class="text-color text-decoration-none">AI Solutions</a></li>
+            <li class="mb-2"><a href="services/web-development.html" class="text-color text-decoration-none">Web Development</a></li>
+            <li class="mb-2"><a href="services/app-development.html" class="text-color text-decoration-none">Mobile App Development</a></li>
+            <li class="mb-2"><a href="services/ai-solutions.html" class="text-color text-decoration-none">AI Solutions</a></li>
+            <li class="mb-2"><a href="services/data-analytics.html" class="text-color text-decoration-none">Data Analytics & BI</a></li>
+            <li class="mb-2"><a href="services/saas-development.html" class="text-color text-decoration-none">SaaS Development</a></li>
+            <li class="mb-2"><a href="services/digital-marketing.html" class="text-color text-decoration-none">Digital Marketing & SEO</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
-          <p class="text-color small mb-3">Subscribe to get the latest updates and news.</p>
-          <div class="input-group">
-            <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
-            <button class="btn btn-primary px-3" type="button">Join</button>
-          </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Get in Touch</h5>
+          <p class="text-color small mb-1"><i class="bi bi-geo-alt me-2 text-primary"></i>Thrissur, Kerala, India</p>
+          <p class="text-color small mb-1"><i class="bi bi-envelope me-2 text-primary"></i>xenotrixtech@gmail.com</p>
+          <p class="text-color small mb-4"><i class="bi bi-telephone me-2 text-primary"></i>+91 9995544316</p>
+          <a href="contact.html" class="btn btn-primary rounded-pill px-4 py-2 w-100 fw-bold">Free Consultation</a>
         </div>
       </div>
       <div class="border-top border-secondary border-opacity-10 mt-5 pt-4 text-center">
-        <p class="text-color small mb-0">2026 Xenotrix Technologies. All rights reserved.</p>
+        <p class="text-color small mb-0">&copy; 2026 Xenotrix Technologies. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js?v=2"></script>
 
 </body>
-
 </html>

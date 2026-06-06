@@ -1,19 +1,23 @@
 # Xenotrix Technologies
 
-> Xenotrix Technologies is a leading global provider of website development, mobile app development, SEO, and digital marketing services. We help businesses increase online visibility and boost sales with high-performance strategies.
+> Xenotrix Technologies is a leading global provider of website development, mobile app development, AI solutions, data analytics, and digital marketing services. We help enterprise clients, startups, and business owners scale their operations with high-performance strategies and smart solutions.
 
 ## About Us
-Xenotrix Technologies specializes in building innovative products and digital ecosystems that merge design, data, and AI to accelerate growth. We provide smart development solutions and bring intelligence to your workflows for maximum efficiency.
+Xenotrix Technologies specializes in building enterprise-grade products and digital ecosystems that merge design, data, and AI to accelerate growth. We provide smart development solutions and bring intelligence to workflows for maximum efficiency.
 
 ## Services
-- **Web Development:** SEO-optimized websites and mobile apps that deliver speed, performance, and high conversion rates.
-- **Digital Marketing:** Expert SEO, social media, and paid ads strategies that increase traffic, leads, and sales.
-- **Data Analytics:** Data-driven insights, dashboards, and analytics solutions tailored to your business goals.
-- **Custom Software:** Scalable and secure custom software tailored to your specific business needs.
-- **AI Solutions & Automation:** Bringing intelligence to your workflows for maximum efficiency.
+- **Web Development:** SEO-optimized websites and web applications built for speed, performance, and high conversion rates.
+- **Mobile App Development:** Cross-platform mobile applications (Flutter) for iOS and Android.
+- **Digital Marketing & SEO:** Expert SEO, Google Business Profile setup, social media, and paid ads strategies.
+- **Data Analytics & BI:** Data-driven insights, dashboards, and analytics solutions tailored to business goals.
+- **AI Solutions & Automation:** Intelligent automation and AI integration to streamline workflows and maximize efficiency.
+- **SaaS Development:** Scalable, secure, and cloud-native SaaS product development.
+- **Project Center:** Academic project support and technical training.
 
 ## Products
-- **Xenotune:** An AI-powered app that generates soundscapes to enhance focus, relaxation, and sleep by optimizing your mental state. Available at https://xenotune.xenotrix.in
+- **XenoCRM:** A robust Customer Relationship Management platform designed to streamline sales, marketing, and customer support.
+- **XenoFin:** An advanced financial management and accounting solution for modern enterprises.
+- **XenoHR:** A comprehensive Human Resources management system (Upcoming).
 
 ## Contact Information
 - **Location:** Thrissur, Kerala, India - 680594
@@ -26,3 +30,4 @@ Xenotrix Technologies specializes in building innovative products and digital ec
 - [Services](https://xenotrix.in/service.html)
 - [Portfolio](https://xenotrix.in/portfolio.html)
 - [Contact](https://xenotrix.in/contact.html)
+- [Industries](https://xenotrix.in/industries.html)
